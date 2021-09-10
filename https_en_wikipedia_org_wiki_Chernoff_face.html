@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Chernoff face - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5ae4ae37-789e-4b7b-8698-cc86d2d26066","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Chernoff_face","wgTitle":"Chernoff face","wgCurRevisionId":1018699114,"wgRevisionId":1018699114,"wgArticleId":3765596,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from April 2021","All articles with dead external links","Articles with dead external links from September 2018","Articles with permanently dead external links","Statistical charts and diagrams"],"wgPageContentLanguage":
+"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Chernoff_face","wgRelevantArticleId":3765596,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":!0,"wgGENewcomerTasksGuidanceEnabled":!0,"wgGEAskQuestionEnabled":!1,"wgGELinkRecommendationsFrontendEnabled":!1,"wgWikibaseItemId":"Q1070295"};RLSTATE={"ext.globalCssJs.user.styles":"ready",
+"site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.37.0-wmf.21"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Chernoff_faces_for_evaluations_of_US_judges.svg/1200px-Chernoff_faces_for_evaluations_of_US_judges.svg.png"/>
+<meta property="og:title" content="Chernoff face - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Chernoff_face"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Chernoff_face&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Chernoff_face&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Chernoff_face"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Chernoff_face rootpage-Chernoff_face skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Chernoff face</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Chernoff_faces_for_evaluations_of_US_judges.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Chernoff_faces_for_evaluations_of_US_judges.svg/220px-Chernoff_faces_for_evaluations_of_US_judges.svg.png" decoding="async" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Chernoff_faces_for_evaluations_of_US_judges.svg/330px-Chernoff_faces_for_evaluations_of_US_judges.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/17/Chernoff_faces_for_evaluations_of_US_judges.svg/440px-Chernoff_faces_for_evaluations_of_US_judges.svg.png 2x" data-file-width="720" data-file-height="540" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Chernoff_faces_for_evaluations_of_US_judges.svg" class="internal" title="Enlarge"></a></div>This example shows Chernoff faces for lawyers' ratings of twelve judges</div></div></div>
+<p><b>Chernoff faces</b>, invented by applied mathematician, statistician and physicist <a href="/wiki/Herman_Chernoff" title="Herman Chernoff">Herman Chernoff</a> in 1973, display <a href="/wiki/Multivariate_statistics" title="Multivariate statistics">multivariate</a> data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation. The idea behind using faces is that humans easily recognize faces and notice small changes without difficulty. Chernoff faces handle each variable differently. Because the features of the faces vary in perceived importance, the way in which variables are mapped to the features should be carefully chosen (e.g. eye size and <a href="/wiki/Eyebrow" title="Eyebrow">eyebrow</a>-slant have been found to carry significant weight).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Detail"><span class="tocnumber">1</span> <span class="toctext">Detail</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Extensions"><span class="tocnumber">2</span> <span class="toctext">Extensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Asymmetrical_faces"><span class="tocnumber">2.1</span> <span class="toctext">Asymmetrical faces</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Chernoff_fish"><span class="tocnumber">2.2</span> <span class="toctext">Chernoff fish</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#In_literature"><span class="tocnumber">3</span> <span class="toctext">In literature</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Other_sources"><span class="tocnumber">5</span> <span class="toctext">Other sources</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Detail">Detail</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=1" title="Edit section: Detail">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Chernoff faces themselves can be plotted on a standard <i>X</i>–<i>Y</i> graph; the faces can be positioned <i>X</i>–<i>Y</i> based on the two most important variables, and then the faces themselves represent the rest of the dimensions for each item. <a href="/wiki/Edward_Tufte" title="Edward Tufte">Edward Tufte</a>, presenting such a diagram, says that this kind of Chernoff-face graph would "reduce well, maintaining legibility even with individual areas of 0.05 square inches as shown ... with cartoon faces and even numbers becoming data measures, we would appear to have reached the limit of graphical economy of presentation, imagination, and let it be admitted, eccentricity".<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Extensions">Extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=2" title="Edit section: Extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Asymmetrical_faces">Asymmetrical faces</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=3" title="Edit section: Asymmetrical faces">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In 1981, Bernhard Flury and Hans Riedwyl suggested "<a href="/wiki/Asymmetrical" class="mw-redirect" title="Asymmetrical">asymmetrical</a>" Chernoff faces; since a face has vertical symmetry (around the <i>y</i> axis), the left side of the face is identical to the right and is basically wasted space – a point also made by Tufte.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> One could have the 18 variables that specify the left be one set of data, but use a different set of data for the right side of the face, allowing one face to depict 35 different measurements. They present results showing that such asymmetrical faces are useful in visualizing databases of <a href="/wiki/Identical_twin" class="mw-redirect" title="Identical twin">identical twins</a>, for example, and are useful in grouping as pairs of Chernoff faces would be.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2021)">citation needed</span></a></i>&#93;</sup>
+</p>
+<h3><span class="mw-headline" id="Chernoff_fish">Chernoff fish</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=4" title="Edit section: Chernoff fish">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In <i>Visualizing Financial Data</i> (2016, <style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-118-90785-6" title="Special:BookSources/978-1-118-90785-6">978-1-118-90785-6</a>), Julie Rodriguez and Piotr Kaczmarek use "Chernoff fish", where various parts of a cartoon fish are used to encode different financial details.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="In_literature">In literature</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=5" title="Edit section: In literature">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the Peter Watts 2006 novel <a href="/wiki/Blindsight_(Watts_novel)" title="Blindsight (Watts novel)"><i>Blindsight</i></a> a transhuman character is seen using a variant of Chernoff faces. This is explained by the character as a more efficient method of representing data, as a large portion of the human brain is devoted to facial recognition. <sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p><p>In the sci-fi short story "Degrees of Freedom" by <a href="/wiki/Karl_Schroeder" title="Karl Schroeder">Karl Schroeder</a>, Chernoff faces make a prominent appearances as a future technology, supporting the communication of aggregate sentiment and perspective.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">"An Experimental Analysis of the Pre-Attentiveness of Features in Chernoff Faces", Morris CJ, Ebert DS, <a href="/wiki/Penny_Rheingans" title="Penny Rheingans">Rheingans P.</a> 1999; published by the conference "Applied Imagery Pattern Recognition: 3D Visualization for Data Exploration and Decision Making". <a rel="nofollow" class="external free" href="http://www.research.ibm.com/people/c/cjmorris/publications/Chernoff_990402.pdf">http://www.research.ibm.com/people/c/cjmorris/publications/Chernoff_990402.pdf</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Edward R.&#160;Tufte, <i>The Visual Display of Quantitative Information</i>, p.&#160;142.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Edward R.&#160;Tufte, <i>The Visual Display of Quantitative Information</i>, p.&#160;97: "Halves may be easier to sort (by matching the right half of an unsorted face to the left half of a sorted face) than full faces. Or else an asymmetrical full face can be used to report additional variables (Flury &amp; Riedwyl 1981). Bilateral symmetry doubles the space consumed by the design in a graph, without adding new information."</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.google.co.uk/books/edition/Visualizing_Financial_Data/WPIwBgAAQBAJ?hl=en&amp;gbpv=1&amp;dq=visualizing+financial+data++Julie+Rodriguez+chernoff+fish&amp;pg=PA349&amp;printsec=frontcover">https://www.google.co.uk/books/edition/Visualizing_Financial_Data/WPIwBgAAQBAJ?hl=en&amp;gbpv=1&amp;dq=visualizing+financial+data++Julie+Rodriguez+chernoff+fish&amp;pg=PA349&amp;printsec=frontcover</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFPeter_Watts" class="citation web cs1">Peter Watts. <a rel="nofollow" class="external text" href="https://rifters.com/real/Blindsight.htm">"Blindsight"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-04-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Blindsight&amp;rft.au=Peter+Watts&amp;rft_id=https%3A%2F%2Frifters.com%2Freal%2FBlindsight.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChernoff+face" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFKarl_Schroeder" class="citation web cs1">Karl Schroeder. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20180324101817/https://thegrid.ai/kgw/end-notes-from-karl-schroeders-degrees-of-freedom/">"End notes from Karl Schroeder's "Degrees of Freedom<span class="cs1-kern-right">"</span>"</a>. Archived from <a rel="nofollow" class="external text" href="https://thegrid.ai/kgw/end-notes-from-karl-schroeders-degrees-of-freedom/">the original</a> on 2018-03-24<span class="reference-accessdate">. Retrieved <span class="nowrap">2018-03-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=End+notes+from+Karl+Schroeder%27s+%22Degrees+of+Freedom%22&amp;rft.au=Karl+Schroeder&amp;rft_id=https%3A%2F%2Fthegrid.ai%2Fkgw%2Fend-notes-from-karl-schroeders-degrees-of-freedom%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChernoff+face" class="Z3988"></span></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="Other_sources">Other sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=7" title="Edit section: Other sources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFHerman_Chernoff1973" class="citation journal cs1"><a href="/wiki/Herman_Chernoff" title="Herman Chernoff">Herman Chernoff</a> (1973). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120415030406/http://www.apprendre-en-ligne.net/mathematica/3.3/chernoff.pdf">"The Use of Faces to Represent Points in K-Dimensional Space Graphically"</a> <span class="cs1-format">(PDF)</span>. <i>Journal of the American Statistical Association</i>. American Statistical Association. <b>68</b> (342): 361–368. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.2307%2F2284077">10.2307/2284077</a>. <a href="/wiki/JSTOR_(identifier)" class="mw-redirect" title="JSTOR (identifier)">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2284077">2284077</a>. Archived from <a rel="nofollow" class="external text" href="http://www.apprendre-en-ligne.net/mathematica/3.3/chernoff.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2012-04-15.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+American+Statistical+Association&amp;rft.atitle=The+Use+of+Faces+to+Represent+Points+in+K-Dimensional+Space+Graphically&amp;rft.volume=68&amp;rft.issue=342&amp;rft.pages=361-368&amp;rft.date=1973&amp;rft_id=info%3Adoi%2F10.2307%2F2284077&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F2284077%23id-name%3DJSTOR&amp;rft.au=Herman+Chernoff&amp;rft_id=http%3A%2F%2Fwww.apprendre-en-ligne.net%2Fmathematica%2F3.3%2Fchernoff.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChernoff+face" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFBernhard_Flury_and_Hans_Riedwyl1981" class="citation journal cs1">Bernhard Flury and Hans Riedwyl (December 1981). <a rel="nofollow" class="external text" href="https://dl.dropbox.com/u/85192141/1981-flury.pdf">"Graphical Representation of Multivariate Data by Means of Asymmetrical Faces"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/Journal_of_the_American_Statistical_Association" title="Journal of the American Statistical Association">Journal of the American Statistical Association</a></i>. American Statistical Association. <b>76</b> (376): 757–765. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.2307%2F2287565">10.2307/2287565</a>. <a href="/wiki/JSTOR_(identifier)" class="mw-redirect" title="JSTOR (identifier)">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2287565">2287565</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+American+Statistical+Association&amp;rft.atitle=Graphical+Representation+of+Multivariate+Data+by+Means+of+Asymmetrical+Faces&amp;rft.volume=76&amp;rft.issue=376&amp;rft.pages=757-765&amp;rft.date=1981-12&amp;rft_id=info%3Adoi%2F10.2307%2F2287565&amp;rft_id=%2F%2Fwww.jstor.org%2Fstable%2F2287565%23id-name%3DJSTOR&amp;rft.au=Bernhard+Flury+and+Hans+Riedwyl&amp;rft_id=http%3A%2F%2Fdl.dropbox.com%2Fu%2F85192141%2F1981-flury.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AChernoff+face" class="Z3988"></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">&#91;<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since September 2018">permanent dead link</span></a></i>&#93;</span></sup></li></ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=8" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>"Facial Representation of Multivariate Data", David L. Huff, Vijay Mahajan and William C. Black. <i><a href="/wiki/Journal_of_Marketing" title="Journal of Marketing">Journal of Marketing</a></i>, Vol. 45, No. 4 (Autumn, 1981), pp.&#160;53–59.Published by: <a href="/wiki/American_Marketing_Association" title="American Marketing Association">American Marketing Association</a></li>
+<li><a rel="nofollow" class="external text" href="https://dl.dropbox.com/u/85192141/1980-turner.pdf">"FACES-A FORTRAN Program for Generating Chernoff-Type Faces on a Line Printer"</a><sup class="noprint Inline-Template"><span style="white-space: nowrap;">&#91;<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since September 2018">permanent dead link</span></a></i>&#93;</span></sup>, Danny W. Turner and F. Eugene Tidmore. <i><a href="/wiki/The_American_Statistician" title="The American Statistician">The American Statistician</a></i>, Vol. 34, No. 3 (Aug., 1980), p.&#160;187 Published by: American Statistical Association</li>
+<li><a rel="nofollow" class="external text" href="https://dl.dropbox.com/u/85192141/1981-kleiner.pdf">"Representing Points in Many Dimensions by Trees and Castles"</a><sup class="noprint Inline-Template"><span style="white-space: nowrap;">&#91;<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;Dead link since September 2018">permanent dead link</span></a></i>&#93;</span></sup>, B. Kleiner and J. A. Hartigan. <i><a href="/wiki/Journal_of_the_American_Statistical_Association" title="Journal of the American Statistical Association">Journal of the American Statistical Association</a></i>, Vol. 76, No. 374 (Jun., 1981), pp.&#160;260–269. Published by the <i><a href="/wiki/American_Statistical_Association" title="American Statistical Association">American Statistical Association</a></i></li>
+<li>Gonick, L. and Smith, W. <i>The Cartoon Guide to Statistics</i>. New York: Harper Perennial, p.&#160;212, 1993.</li>
+<li>Moriarity, S. (1979). "Communicating financial information through multidimensional graphics". Journal of Accounting Research 17, 205-224.</li>
+<li>Stock, D. and Watson, C. (1984). "Human judgment accuracy, multidimensional graphics, and humans versus models". <i><a href="/wiki/Journal_of_Accounting_Research" title="Journal of Accounting Research">Journal of Accounting Research</a></i> 22, 192-206.</li>
+<li><i>Information Visualization: Perception for Design</i> (2004), Ware C.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.ucl.ac.uk/staff/a.loizides/218.pdf">"The Empathic Visualisation Algorithm: Chernoff Faces Revisited"</a> (218)<a rel="nofollow" class="external autonumber" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.9200">[1]</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20140326100742/http://129.96.12.107/confpapers/CRPITV24Lee.pdf">"An empirical evaluation of Chernoff faces, star glyphs, and spatial visualizations for binary data"</a>, Michael D. Lee, Rachel E. Reilly, Marcus E. Butavicius. ACM International Conference Proceeding Series; Vol. 142, Proceedings of the Asia-Pacific symposium on Information visualisation - Volume 24</li>
+<li><a rel="nofollow" class="external text" href="http://www.stata-journal.com/sjpdf.html?articlenum=gr0038">"Graphical representation of multivariate data using Chernoff faces"</a>, Raciborski 2009, <i>The Stata Journal</i> 9, Number 3, pp.&#160;374–387</li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Chernoff_face&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://www.nytimes.com/2008/04/01/science/01prof.html">"Professor Puts a Face on the Performance of Baseball Managers"</a> -(<i><a href="/wiki/The_New_York_Times" title="The New York Times">The New York Times</a></i>; Chernoff faces generated from manager performance data)</li>
+<li><a rel="nofollow" class="external text" href="http://eagereyes.org/VisCrit/ChernoffFaces.html">"A Critique of Chernoff Faces"</a> - Robert Kosara, published February 25, 2007</li>
+<li><a rel="nofollow" class="external text" href="http://people.cs.uchicago.edu/~wiseman/chernoff/">Java visualization</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20070521104703/http://kspark.kaist.ac.kr/Human%20Engineering.files/Chernoff/Chernoff%20Faces.htm">Example of urban living conditions in LA</a></li>
+<li><a rel="nofollow" class="external text" href="https://archive.is/20121219203010/http://rgm2.lab.nig.ac.jp/RGM2/func.php?rd_id=aplpack:faces">Example and code</a> for the <a href="/wiki/R_programming_language" class="mw-redirect" title="R programming language">R statistical software environment</a></li>
+<li><a rel="nofollow" class="external text" href="http://healthyalgorithms.com/2012/11/12/dataviz-in-python-chernoff-faces-with-matplotlib/">Example and code</a> for <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> using the <a href="/wiki/Matplotlib" title="Matplotlib">matplotlib</a> library</li>
+<li><a rel="nofollow" class="external text" href="http://www.mathworks.com/help/stats/glyphplot.html">Example code</a> for <a href="/wiki/MATLAB" title="MATLAB">MATLAB</a> using <a rel="nofollow" class="external text" href="http://www.mathworks.com/products/statistics/">Statistics and Machine Learning Toolbox</a>.</li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20041217153643/http://gis.esri.com/library/userconf/educ04/papers/pap5000.pdf">"Mapping Quality of Life with Chernoff Faces", Joseph G. Spinelli and Yu Zhou</a></li>
+<li><a rel="nofollow" class="external text" href="http://www2.sas.com/proceedings/sugi26/p195-26.pdf">"SUGI 26: Escaping Flatland: Chernoff's Faces Revisited"</a> -(modifying FACES for more aesthetic output)</li>
+<li><a rel="nofollow" class="external text" href="http://bradandkathy.com/software/faces.html">"Faces 2.0"</a> -(a <a href="/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a> screensaver which generates random Chernoff faces)</li>
+<li><a rel="nofollow" class="external text" href="http://www.novospark.com">NovoSpark Visualizer</a> - an advanced visualization tool that enables qualitative analysis of multidimensional data through the exploration of a graphical image.</li>
+<li><a rel="nofollow" class="external text" href="http://flowingdata.com/2010/08/31/how-to-visualize-data-with-cartoonish-faces/">"How to visualize data with cartoonish faces ala Chernoff" (Flowing Data)</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20130916002111/http://blogs.iq.harvard.edu/sss/archives/2006/11/chernoff_faces_1.shtml">Baseball faces</a> - at the Institute for Quantitative Social Science at Harvard University</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw2337
+Cached time: 20210909145640
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.222 seconds
+Real time usage: 0.310 seconds
+Preprocessor visited node count: 1102/1000000
+Post‐expand include size: 18797/2097152 bytes
+Template argument size: 3727/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 14360/5000000 bytes
+Lua time usage: 0.081/10.000 seconds
+Lua memory usage: 3721456/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  269.334      1 -total
+ 33.38%   89.901      1 Template:Cn
+ 27.44%   73.914      1 Template:ISBN
+ 26.36%   70.987      2 Template:Cite_web
+ 25.45%   68.537      4 Template:Fix
+ 16.83%   45.333      1 Template:Catalog_lookup_link
+ 16.80%   45.259      8 Template:Category_handler
+  5.44%   14.663      1 Template:Error-small
+  4.97%   13.388      3 Template:Dead_link
+  4.76%   12.809      1 Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3765596-0!canonical and timestamp 20210909145639 and revision id 1018699114. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Chernoff_face&amp;oldid=1018699114">https://en.wikipedia.org/w/index.php?title=Chernoff_face&amp;oldid=1018699114</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Statistical_charts_and_diagrams" title="Category:Statistical charts and diagrams">Statistical charts and diagrams</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2021" title="Category:Articles with unsourced statements from April 2021">Articles with unsourced statements from April 2021</a></li><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_September_2018" title="Category:Articles with dead external links from September 2018">Articles with dead external links from September 2018</a></li><li><a href="/wiki/Category:Articles_with_permanently_dead_external_links" title="Category:Articles with permanently dead external links">Articles with permanently dead external links</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"><span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item">Not logged in</li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Chernoff+face" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Chernoff+face" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"><span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Chernoff_face" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Chernoff_face" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"><span>Variants</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"><span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Chernoff_face">Read</a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Chernoff_face&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Chernoff_face&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"><span>More</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/w/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"><span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events">Current events</a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x">Random article</a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">About Wikipedia</a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact us</a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">Donate</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" class="vector-menu-heading"><span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">Learn to edit</a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">Community portal</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r">Recent changes</a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia">Upload file</a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"><span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Chernoff_face" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Chernoff_face" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Chernoff_face&amp;oldid=1018699114" title="Permanent link to this revision of this page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Chernoff_face&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Chernoff_face&amp;id=1018699114&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1070295" title="Structured data on this page hosted by Wikidata [g]" accesskey="g">Wikidata item</a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" class="vector-menu-heading"><span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Chernoff_face&amp;action=show-download-screen" title="Download this page as a PDF file">Download as PDF</a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Chernoff_face&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" class="vector-menu-heading"><span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Chernoff-Gesichter" title="Chernoff-Gesichter – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Caras_de_Chernoff" title="Caras de Chernoff – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Figures_de_Chernoff" title="Figures de Chernoff – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%B2%B4%EB%A5%B4%EB%85%B8%ED%94%84_%EC%96%BC%EA%B5%B4" title="체르노프 얼굴 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B0_%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B0" title="Лица Чернова – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Chernoffin_naamat" title="Chernoffin naamat – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1070295#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 19 April 2021, at 11:42<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Chernoff_face&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.222","walltime":"0.310","ppvisitednodes":{"value":1102,"limit":1000000},"postexpandincludesize":{"value":18797,"limit":2097152},"templateargumentsize":{"value":3727,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":14360,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  269.334      1 -total"," 33.38%   89.901      1 Template:Cn"," 27.44%   73.914      1 Template:ISBN"," 26.36%   70.987      2 Template:Cite_web"," 25.45%   68.537      4 Template:Fix"," 16.83%   45.333      1 Template:Catalog_lookup_link"," 16.80%   45.259      8 Template:Category_handler","  5.44%   14.663      1 Template:Error-small","  4.97%   13.388      3 Template:Dead_link","  4.76%   12.809      1 Template:Delink"]},"scribunto":{"limitreport-timeusage":{"value":"0.081","limit":"10.000"},"limitreport-memusage":{"value":3721456,"limit":52428800}},"cachereport":{"origin":"mw2337","timestamp":"20210909145640","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Chernoff face","url":"https:\/\/en.wikipedia.org\/wiki\/Chernoff_face","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1070295","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1070295","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-01-18T21:26:04Z","dateModified":"2021-04-19T11:42:40Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/17\/Chernoff_faces_for_evaluations_of_US_judges.svg"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":127,"wgHostname":"mw2338"});});</script>
+</body></html>

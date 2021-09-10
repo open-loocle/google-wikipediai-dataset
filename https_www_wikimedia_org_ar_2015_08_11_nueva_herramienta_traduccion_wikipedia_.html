@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+		
+	<link rel="pingback" href="https://www.wikimedia.org.ar/xmlrpc.php">
+
+	<title>Nueva herramienta de traducción en Wikipedia &#8211; Wikimedia Argentina</title>
+<script type="application/javascript">var ajaxurl = "https://www.wikimedia.org.ar/wp-admin/admin-ajax.php"</script><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Wikimedia Argentina &raquo; Feed" href="https://www.wikimedia.org.ar/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wikimedia Argentina &raquo; RSS de los comentarios" href="https://www.wikimedia.org.ar/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wikimedia Argentina &raquo; Nueva herramienta de traducción en Wikipedia RSS de los comentarios" href="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wikimedia.org.ar\/wp-includes\/js\/wp-emoji-release.min.js?ver=05b10150bc7a0aacc32b9c73ca9174b1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='ssmw-style-css'  href='https://www.wikimedia.org.ar/wp-content/plugins/smart-social-media-widget/css/style.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.wikimedia.org.ar/wp-content/plugins/smart-social-media-widget/css/font-awesome.min.css?ver=4.6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.wikimedia.org.ar/wp-includes/css/dist/block-library/style.min.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.wikimedia.org.ar/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/framework/bootstrap/css/bootstrap.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='fa-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/css/fonts/awesome-fonts/css/font-awesome.min.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='fa-snapchat-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/css/fa-snapchat.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='vipertf-theme-plugins-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/css/theme_plugins.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='vipertf-style-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/css/bkstyle.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='vipertf-responsive-css'  href='https://www.wikimedia.org.ar/wp-content/themes/vipertf/css/responsive.css?ver=05b10150bc7a0aacc32b9c73ca9174b1' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-vipertf_option-css'  href='https://fonts.googleapis.com/css?family=Work+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CRaleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CLato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic&#038;ver=1555982480' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/plugins/smart-social-media-widget/js/custom.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<link rel='https://api.w.org/' href='https://www.wikimedia.org.ar/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wikimedia.org.ar/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wikimedia.org.ar/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='El desafío de institucionalizar las actividades de Wikimedia en un proyecto a largo plazo.' href='https://www.wikimedia.org.ar/2015/08/05/el-desafio-de-institucionalizar-las-actividades-de-wikimedia-en-un-proyecto-a-largo-plazo/' />
+<link rel='next' title='Editatón en el Teatro Colón' href='https://www.wikimedia.org.ar/2015/08/14/2800/' />
+
+<link rel="canonical" href="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/" />
+<link rel='shortlink' href='https://www.wikimedia.org.ar/?p=2751' />
+<link rel="alternate" type="application/json+oembed" href="https://www.wikimedia.org.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.wikimedia.org.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F&#038;format=xml" />
+    
+    <style type='text/css' media="all">
+                ::selection {color: #FFF; background: #ea0000}
+        ::-webkit-selection {color: #FFF; background: #ea0000}
+         
+            .module-square-grid .content_in .post-c-wrap .title:hover, .module-carousel-type1 .post-c-wrap .title:hover,
+            .module-hero .content_in .post-c-wrap .title:hover,
+            .bk-slider-module .flexslider .item h4:hover, .content_out.small-post h4:hover,
+            .bk-sub-posts .post-title a:hover, 
+            .bk-blog-content .meta-wrap .post-category, 
+             .breadcrumbs .fa-home, .module-feature2 .meta-wrap .post-category, .footer .widget-title h3, 
+        
+        
+        
+             p > a, p > a:hover, .single-page .article-content a:hover, .single-page .article-content a:visited, .content_out.small-post .meta .post-category, .bk-sub-menu li:hover > a,
+            #top-menu>ul>li > .sub-menu a:hover, .bk-dropdown-menu li:hover > a, .widget-twitter .fa-twitter,
+            .widget-twitter ul.slides li .twitter-message a, .content_in .meta > div.post-category a,
+            .row-type .meta-wrap .post-category, #top-menu>ul>li:hover > a, .article-content li a, .article-content p a,
+            .s-post-header .meta > .post-category, .breadcrumbs .location, .recommend-box .close,
+            .s-post-nav .nav-title span, .error-number h4, .redirect-home, .module-breaking-carousel .flex-direction-nav .flex-next, .module-breaking-carousel:hover .flex-direction-nav .flex-prev,
+            .bk-author-box .author-info .bk-author-page-contact a:hover, .module-feature2 .meta .post-category, 
+            .bk-blog-content .meta .post-category, .bk-forum-title:hover, .module-classic-blog .bk-blog-content h4:hover, .module-large-blog .post-c-wrap h4:hover, 
+            .module-feature2 .content_out h4:hover, .row-type h4:hover, .widget_latest_replies .details h4:hover,
+            #pagination .page-numbers, .post-page-links a, .single-page .icon-play:hover,
+            ul.forum-titles li.bbp-forum-info, #bbpress-forums li.bbp-header li.bbp-topic-title, #wp-calendar tbody td a, #wp-calendar tfoot #prev,
+            .widget_comment .post-title:hover, #footer-menu a:hover, .woocommerce-page ul.product_list_widget li a:hover,
+            .woocommerce-page div.product div.thumbnails .flex-direction-nav li a, .woocommerce-page ul.products li.product h3:hover,
+            
+            .widget_latest_replies .details .comment-author, .widget_recent_topics .details .comment-author a
+            ,.woocommerce-page .star-rating span, .woocommerce-page p.stars a, .woocommerce-page div.product form.cart table td .reset_variations:hover, 
+            .bk_small_cart .widget_shopping_cart .cart_list a:hover, .top-nav .bk-lwa .bk-account-info a:hover,
+            a.bk_u_login:hover, a.bk_u_logout:hover, .bk-back-login:hover, .bk_small_cart .cart-contents:hover, .woocommerce-cart .cart-collaterals .cart_totals .woocommerce-shipping-calculator .button:hover,
+            .top-nav .bk-links-modal:hover, .bk_small_cart .cart-contents span, #main-mobile-menu .expand i, 
+            .main-nav.bk-menu-light .bk-sub-menu li > a:hover, .main-nav.bk-menu-light .bk-sub-posts .post-title a:hover,
+            .main-nav .menu > li.current-menu-item > a, .main-nav #main-menu .menu > li:hover > a
+            {color: #ea0000}
+            
+            #top-menu>ul>li > .sub-menu, .bk-dropdown-menu, .s-post-nav .nav-title span, 
+            .s-post-nav .nav-title span, .bk-mega-menu, .bk-mega-column-menu, .search-loadding, #comment-submit:hover, .s-tags a:hover, input[type="submit"]:hover,
+            .widget_tag_cloud .tagcloud a:hover,
+            
+            #pagination .page-numbers, .post-page-links a, .post-page-links > span, .widget-twitter .flex-direction-nav li a:hover, .widget_latest_comments .flex-direction-nav li a:hover 
+            ,#mobile-inner-header, .menu-location-title, .woocommerce-page a.button:hover, .woocommerce-page div.product form.cart .button:hover,
+            .woocommerce-page #review_form #respond .form-submit #submit:hover, .woocommerce-page .woocommerce-message .button:hover, .woocommerce-page input.button:hover,
+            .woocommerce-page .cart-collaterals .shipping_calculator h2:hover, .woocommerce-page .widget_price_filter .price_slider_amount .button:hover, .button:hover
+            ,.bbp-login-form .bbp-submit-wrapper #user-submit:hover, .bk-lwa:hover > .bk-account-info, .bk-back-login:hover, .bk_small_cart:hover #bk_small_cart_widget, 
+            .bk_small_cart .woocommerce.widget_shopping_cart .buttons a:hover, .woocommerce-cart .cart-collaterals .cart_totals .woocommerce-shipping-calculator .button:hover
+            ,.menu-location-title, #mobile-inner-header, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+            .post-c-wrap .readmore a, .main-nav-wrap
+            {border-color: #ea0000;}
+            
+            
+            
+            .s-tags a:hover, .s-post-nav .icon, #comment-submit:hover, .flex-direction-nav li a,
+            .widget_latest_comments .flex-direction-nav li a:hover, .widget-twitter .flex-direction-nav li a:hover, .woocommerce-page a.button:hover,
+            .woocommerce-page div.product form.cart .button:hover, .woocommerce-page #review_form #respond .form-submit #submit:hover, 
+            .woocommerce-page .woocommerce-message .button:hover, .woocommerce-page input.button:hover, .woocommerce-page input.button.alt:hover,
+            .woocommerce-page .cart-collaterals .shipping_calculator h2:hover, .woocommerce-page .widget_price_filter .price_slider_amount .button:hover, .button:hover,
+            .bbp-login-form .bbp-submit-wrapper #user-submit:hover, .review-score-smallpost, .widget_most_commented .comments, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+            .bk_small_cart .woocommerce.widget_shopping_cart .buttons a:hover, .top-bar.bk-menu-light .bk_small_cart .woocommerce.widget_shopping_cart .buttons a:hover,
+            .widget_tag_cloud .tagcloud a:hover, input[type="submit"]:hover, .bk-review-bar-wrap, 
+            
+            .thumb, .module-fw-slider .flex-control-nav li a.flex-active, .module-breaking-carousel .content_out.small-post .meta:after,
+            .footer .cm-flex .flex-control-paging li a.flex-active,
+            .module-feature2 .flex-direction-nav li a, .loadmore span.ajaxtext:hover,
+            .bk-review-box .bk-overlay span, .bk-score-box, .share-total, #pagination .page-numbers.current, .post-page-links > span,
+            .woocommerce span.onsale, .woocommerce-page span.onsale, .widget_display_stats dd strong, .widget_display_search .search-icon, .searchform-wrap .search-icon,
+            #bbpress-forums #bbp-search-form .search-icon, #back-top, .woocommerce-page div.product .summary .product_title span, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, 
+            .related.products > h2 span, .woocommerce-page #reviews h3 span, .upsells.products > h2 span, .cross-sells > h2 span, .woocommerce-page .cart-collaterals .cart_totals h2 span
+            , .bbp-pagination-links a:hover, .bbp-pagination-links span.current, .module-square-grid .content_in_wrapper, .bk_tabs .ui-tabs-nav li.ui-tabs-active
+            , .widget_product_search input[type="submit"], .post-c-wrap .readmore a
+            {background-color: #ea0000;}
+            
+            .content_out .review-score, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive
+            {background-color: rgba(234,0,0,0.9);}
+            
+            .footer .cm-flex .flex-control-paging li a
+            {background-color: rgba(234,0,0,0.3);}
+            
+            .widget_most_commented .comments:after 
+            {border-right-color: #ea0000;}
+            
+                @-webkit-keyframes rotateplane {
+                0% {
+                    -webkit-transform: perspective(120px) scaleX(1) scaleY(1);
+                    background-color: #ea0000;
+                }
+                25% {
+                    -webkit-transform: perspective(120px) rotateY(90deg) scaleX(1) scaleY(1);
+                    background-color: #ea0000;
+                }
+                25.1% {
+                    -webkit-transform: perspective(120px) rotateY(90deg) scaleX(-1) scaleY(1);
+                    background-color: #333333;
+                }
+                50% {
+                    -webkit-transform: perspective(120px) rotateY(180deg) scaleX(-1) scaleY(1);
+                    background-color: #333333;
+                }
+                75% {
+                    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(90deg) scaleX(-1) scaleY(1);
+                    background-color: #333333;
+                }
+                75.1% {
+                    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(90deg) scaleX(-1) scaleY(-1);
+                    background-color: #ea0000;
+                }
+                100% {
+                    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg) scaleX(-1) scaleY(-1);
+                    background-color: #ea0000;
+                }
+            }
+            @keyframes rotateplane {
+                0% {
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1);
+                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1);
+                    background-color: #ea0000;
+                }
+                25% {
+                    transform: perspective(120px) rotateX(-90deg) rotateY(0deg) scaleX(1) scaleY(1);
+                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1);
+                    background-color: #ea0000;
+                }
+                25.1% {
+                    transform: perspective(120px) rotateX(-90deg) rotateY(0deg) scaleX(1) scaleY(-1);
+                    -webkit-transform: perspective(120px) rotateX(-90deg) rotateY(0deg) scaleX(1) scaleY(-1);
+                    background-color: #333333;
+                }
+                50% {
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) scaleX(1) scaleY(-1);
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) scaleX(1) scaleY(-1);
+                    background-color: #333333;
+                }
+                75% {
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(-90deg) scaleX(1) scaleY(-1);
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(-90deg) scaleX(1) scaleY(-1);
+                    background-color: #333333;
+                }
+                75.1% {
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(-90deg) scaleX(-1) scaleY(-1);
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(-90deg) scaleX(-1) scaleY(-1);
+                    background-color: #ea0000;
+                }
+                100% {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg) scaleX(-1) scaleY(-1);
+                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg) scaleX(-1) scaleY(-1);
+                    background-color: #ea0000;
+                }
+            }
+                    #page-wrap { width: auto; }
+                        
+    </style>
+        <link rel="icon" href="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/cropped-logo-Wiki-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/cropped-logo-Wiki-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/cropped-logo-Wiki-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/cropped-logo-Wiki-270x270.png" />
+<style type="text/css" title="dynamic-css" class="options-output">.header-wrap{background-repeat:repeat;background-size:cover;background-position:center center;background-image:url('https://www.wikimedia.org.ar/wp-content/uploads/2017/02/header.png');}.header-inner{margin-top:150px;margin-bottom:160px;}.bk-page-content-wrap{margin-top:35px;}#top-menu>ul>li, #top-menu>ul>li .sub-menu li, .bk_u_login, .bk_u_logout, .bk-links-modal{font-family:"Work Sans";font-weight:600;font-style:normal;}.main-nav #main-menu .menu > li, .main-nav #main-menu .menu > li > a, .mega-title h3, .header .logo.logo-text h1, .bk-sub-posts .post-title,
+                            .comment-box .comment-author-name, .today-date{font-family:"Work Sans";font-weight:600;font-style:normal;}.bk-review-score, .bk-criteria-wrap > span{font-family:Raleway;font-weight:600;font-style:normal;}.meta, .post-category, .widget_comment .cm-header div, .module-feature2 .post-author, .comment-box .comment-time, .share-box ul li .share-item__value,.share-box .bk-share .share-item__valuem, .share-total, .loadmore span.ajaxtext, .woocommerce-page a.button, #comment-submit, 
+                            .featured-slider-wrapper .post-c-wrap .readmore a,
+                            .woocommerce-page #review_form #respond .form-submit #submit, .woocommerce-page div.product form.cart .button, .woocommerce-page input.button, 
+                            .woocommerce-page .cart-collaterals .shipping_calculator .button, .woocommerce-page .cart-collaterals .shipping_calculator h2, 
+                            .woocommerce span.onsale, .woocommerce-page span.onsale, .breadcrumbs, .s-post-nav .nav-title span, .product_meta .post-tags-title,
+                            .woocommerce-page .widget_price_filter .price_slider_amount .button, .button, .woocommerce-page div.product form.cart table td select, .woocommerce-page div.product form.cart table td .reset_variations, 
+                            .bk-search-content .nothing-respond, .bk_small_cart .woocommerce.widget_shopping_cart .buttons a, .woocommerce-page div.product p.price ins, .woocommerce-cart .cart-collaterals .cart_totals .woocommerce-shipping-calculator .button {font-family:"Work Sans";font-weight:500;font-style:normal;}h1, h2, h3, h4, h5, .logo-text, #mobile-top-menu > ul > li, #mobile-menu > ul > li, #footer-menu a, .bk-copyright, 
+                            .widget-social-counter .counter, .widget-social-counter ul li .data .subscribe, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a,
+                            #bbpress-forums ul.forum-titles, .breadcrumbs .location, #bbpress-forums li.bbp-header, .woocommerce-page ul.product_list_widget li a, 
+                            .bk_small_cart .woocommerce.widget_shopping_cart .total, .bk_small_cart .widget_shopping_cart .cart_list a,
+                            .bk_tabs  .ui-tabs-nav li, .bkteamsc .team-member .member-name, .buttonsc, .bk-forum-title {font-family:"Work Sans";font-weight:700;font-style:normal;}body, textarea, input, p, 
+                            .entry-excerpt, .comment-text, .comment-author, .article-content,
+                            .comments-area, .tag-list, .bk-mega-menu .bk-sub-posts .feature-post .menu-post-item .post-date, .comments-area small{font-family:Lato;font-weight:400;font-style:normal;}.s-post-header h1{text-transform:uppercase;font-size:40px;}</style></head>
+
+<body class="post-template-default single single-post postid-2751 single-format-standard do-etfw">
+	            <div id="page-wrap" class="wide">
+                <div id="main-mobile-menu">
+                    <div class="block">
+                        <div id="mobile-inner-header">
+                            <a class="mobile-menu-close" href="#" title="Close"><i class="fa fa-arrow-left"></i></a>
+                        </div>
+                                         
+                             <div class="top-menu">
+                                <h3 class="menu-location-title">
+                                    Top Menu                                </h3>
+                            <div id="mobile-top-menu" class="menu-viper-top-container"><ul id="menu-viper-top" class="menu"><li id="menu-item-3693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-3693"><a href="https://www.wikimedia.org.ar/#">Nosotros</a>
+<ul class="sub-menu">
+	<li id="menu-item-3703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3703"><a href="https://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
+	<li id="menu-item-3700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3700"><a href="https://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+	<li id="menu-item-3701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3701"><a href="https://www.wikimedia.org.ar/que-es/estatuto-social/">Estatuto Social</a></li>
+	<li id="menu-item-3702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3702"><a href="https://www.wikimedia.org.ar/que-es/finanzas/">Balances</a></li>
+	<li id="menu-item-3704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="https://www.wikimedia.org.ar/donaciones/">Donaciones</a></li>
+</ul>
+</li>
+<li id="menu-item-3694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3694"><a href="https://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+<li id="menu-item-3728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3728"><a href="https://www.wikimedia.org.ar/glam/">Cultura y conocimiento abierto</a></li>
+<li id="menu-item-3699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3699"><a href="https://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+<li id="menu-item-3697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3697"><a href="https://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a>
+<ul class="sub-menu">
+	<li id="menu-item-3803" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3803 menu-category-175"><a href="https://www.wikimedia.org.ar/category/les-expertes/">Las Expertas</a></li>
+</ul>
+</li>
+<li id="menu-item-3698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3698"><a href="https://www.wikimedia.org.ar/contacto/">Contacto</a></li>
+</ul></div>                            </div>
+                                                                            <div class="main-menu">
+                                <h3 class="menu-location-title">
+                                    Menú principal                                </h3>
+                                <div id="mobile-menu" class="menu-viper-central-container"><ul id="menu-viper-central" class="menu"><li id="menu-item-3706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3706"><a>Programas</a>
+<ul class="sub-menu">
+	<li id="menu-item-3729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3729"><a href="https://www.wikimedia.org.ar/glam/">Cultura y conocimiento abierto</a></li>
+	<li id="menu-item-3707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3707"><a href="https://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+	<li id="menu-item-3709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3709"><a href="https://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+</ul>
+</li>
+<li id="menu-item-3711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3711"><a href="http://campus.wikimedia.org.ar/">Campus virtual</a></li>
+<li id="menu-item-3841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3841"><a href="https://www.wikimedia.org.ar/a-las-fuentes/">A las fuentes</a></li>
+<li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712"><a href="https://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+</ul></div>                            </div>
+                                            </div>
+                </div>
+                <div id="page-inner-wrap">
+                    <div class="page-cover mobile-menu-close"></div>
+                    <div class="bk-page-header">
+                        <div class="top-bar">
+                            <div class="bkwrapper container">
+                                <div class="top-nav clearfix">
+                                                                         
+                                        <div id="top-menu" class="menu-viper-top-container"><ul id="menu-viper-top-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-3693"><a href="https://www.wikimedia.org.ar/#">Nosotros</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3703"><a href="https://www.wikimedia.org.ar/equipo/">El Equipo</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3700"><a href="https://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3701"><a href="https://www.wikimedia.org.ar/que-es/estatuto-social/">Estatuto Social</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3702"><a href="https://www.wikimedia.org.ar/que-es/finanzas/">Balances</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="https://www.wikimedia.org.ar/donaciones/">Donaciones</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3694"><a href="https://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3728"><a href="https://www.wikimedia.org.ar/glam/">Cultura y conocimiento abierto</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3699"><a href="https://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3697"><a href="https://www.wikimedia.org.ar/proyectos/brecha-de-genero/">Género</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3803 menu-category-175"><a href="https://www.wikimedia.org.ar/category/les-expertes/">Las Expertas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3698"><a href="https://www.wikimedia.org.ar/contacto/">Contacto</a></li>
+</ul></div> 
+                                                                                                                                				<div class="header-social">
+                    					<ul class="clearfix">
+                    						                    							<li class="social-icon fb"><a class="bk-tipper-bottom" data-title="Facebook" href="https://www.facebook.com/WikimediaArgentina/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    						                    						
+                    						                    							<li class="social-icon twitter"><a class="bk-tipper-bottom" data-title="Twitter" href="https://twitter.com/wikimedia_ar" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    						                    						
+                    						                    						
+                    						                    						
+                    						                    						
+                    						                    							<li class="social-icon instagram"><a class="bk-tipper-bottom" data-title="Instagram" href="https://www.instagram.com/wikimedia_ar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    						                    						
+                    						                    						
+                    						                    							<li class="social-icon youtube"><a class="bk-tipper-bottom" data-title="Youtube" href="https://www.youtube.com/channel/UCv5_XQA53DDuAjLLQu-6-AA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    						      							
+                    						                                    
+                                                                                        
+                                                                                                                                                                            
+                                                                						
+                    					</ul>
+                    				</div>
+                    
+                                      
+                                </div><!--top-nav-->
+                            </div>
+                        </div><!--top-bar-->            
+                        <div class="header-wrap">
+                            <div class="header container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                            			<div class="header-inner ">
+                                			<!-- logo open -->
+                                                                                    			<div class="logo">
+                                                    <a href="https://www.wikimedia.org.ar">
+                                                        <img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/06/Wikimedia_Argentina_logo_-_horizontal.png" alt="logo"/>
+                                                    </a>
+                                    			</div>
+                                    			<!-- logo close -->
+                                                                                                                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                		</div>
+                        <!-- nav open -->
+                		<nav class="main-nav">
+                            <div class="main-nav-inner bkwrapper container">
+                                <div class="main-nav-container clearfix">
+                                    <div class="main-nav-wrap">
+                                                                                    <div class="header-logo-stick">
+                                                <a href="https://www.wikimedia.org.ar">
+                                                    <img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/06/Wikimedia_Argentina_logo_-_horizontal.png" alt="logo"/>
+                                                </a>
+                                			</div>
+                                                                                <div class="mobile-menu-wrap">
+                                            <div class="mobile-menu-inner">
+                                                <a class="mobile-nav-btn" id="nav-open-btn"><i class="fa fa-bars"></i></a>  
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="main-menu" class="menu-viper-central-container"><ul id="menu-viper-central-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3706"><a>Programas</a><div class="bk-dropdown-menu"><div class="bk-sub-menu-wrap"><ul class="bk-sub-menu clearfix">	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3729"><a href="https://www.wikimedia.org.ar/glam/">Cultura y conocimiento abierto</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3707"><a href="https://www.wikimedia.org.ar/programadeeducacion/">Educación</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3709"><a href="https://www.wikimedia.org.ar/#">Apoyo a la comunidad</a></li>
+</ul></div></div></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3711"><a href="http://campus.wikimedia.org.ar/">Campus virtual</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3841"><a href="https://www.wikimedia.org.ar/a-las-fuentes/">A las fuentes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712"><a href="https://www.wikimedia.org.ar/inscripcion/">Asociate</a></li>
+</ul></div>                                    </div>
+                                    <div class="ajax-search-wrap"><div id="ajax-form-search" class="ajax-search-icon"><i class="fa fa-search"></i><i class="fa fa-times"></i></div><form class="ajax-form" method="get" action="https://www.wikimedia.org.ar/"><fieldset><input id="search-form-text" type="text" class="field" name="s" autocomplete="off" value="" placeholder="Buscar este sitio..."></fieldset></form> <div id="ajax-search-result"></div></div> 
+                                </div>    
+                            </div><!-- main-nav-inner -->       
+                		</nav>
+                        <!-- nav close -->
+                    </div>                            
+                    <!-- backtop open -->
+            		                        <div id="back-top"><i class="fa fa-long-arrow-up"></i></div>
+                                		<!-- backtop close -->
+                                <div class="single-page bk-page-content-wrap " itemscope itemtype="http://schema.org/Article">
+                        <div class="article-wrap bkwrapper container">
+                <div class="row bk-in-single-page bksection">
+                    <div class="main col-md-8">
+                                            <header id="bk-normal-feat" class="clearfix"><div class="s-feat-img"><img width="300" height="274" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/07/300px-Wikipedia-puzzleglobe-V2.svg_.png" class="attachment-vipertf-900-613 size-vipertf-900-613 wp-post-image" alt="" /></div></header><div class="s_header_wraper"><div class="s-post-header container"><h1 itemprop="headline">Nueva herramienta de traducción en Wikipedia</h1><div class="meta"><div class="post-category"><a href="https://www.wikimedia.org.ar/category/comunidad/">Comunidad</a>, <a href="https://www.wikimedia.org.ar/category/proyectos/">Proyectos</a></div><div class="post-date">11  de agosto de 2015</div><div class="post-author">por <a href="https://www.wikimedia.org.ar/author/isha/">isha</a></div></div></div></div><!-- end single header -->                                            <div class="article-content clearfix" itemprop="articleBody">
+<!-- ARTICAL CONTENT -->
+                                                        <p>En Wikimanía 2015, la conferencia anual de Wikimedia llevada a cabo en la Ciudad de México entre los días 15 y 19 de julio, se presentó la nueva herramienta de traducción para Wikipedia, disponible en versión beta desde enero. Mucha parte del contenido que se encuentra en un idioma de Wikipedia no se encuentra en muchos otros, por lo que facilitar la traducción puede tener un impacto muy grande en la creación de nuevos artículos.</p>
+<p>La funcionalidad principal es, por supuesto, la traducción automática del texto de los artículos. Esta se encuentra disponible para todos aquellos pares de idiomas soportados por <a href="https://www.apertium.org/">Apertium</a>, el motor de traducción automática de código abierto que utiliza la herramienta. El trabajo de traducción se realiza en un entorno sencillo, con una herramienta de edición amigable para nuevos usuarios (¡y para los experimentados también!), similar al editor visual.</p>
+<p><a href="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz.png"><img class="  wp-image-2762 aligncenter" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz.png" alt="interfaz" width="631" height="297" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz.png 1042w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz-300x141.png 300w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz-768x362.png 768w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz-1024x483.png 1024w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/interfaz-400x188.png 400w" sizes="(max-width: 631px) 100vw, 631px" /></a></p>
+<p>Además de traducir texto, la herramienta incluye en forma automática las categorías al artículo, traduce los enlaces internos y crea los enlaces a las versiones del artículo en otros idiomas que existan. Nos indica además, como se muestra en la imagen, una advertencia si la traducción automática no fue modificada manualmente.<br />
+<img class="  wp-image-2761 alignright" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/panel-traducción.png" alt="panel traducción" width="309" height="232" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/panel-traducción.png 654w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/panel-traducción-300x225.png 300w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/panel-traducción-400x300.png 400w" sizes="(max-width: 309px) 100vw, 309px" /><br />
+La herramienta dispone también de un panel de control que muestra tanto las traducciones Publicadas como aquellas que se encuentran En proceso. Es posible iniciar una traducción y guardarla sin publicarla para continuarla después, por lo que no es necesario realizarlas en una sola edición, como debería hacerse con el editor disponible en Wikipedia.</p>
+<p>En el futuro este panel incorporará además sugerencias de artículos a traducir basadas en los artículos ya creados por el usuario.</p>
+<p>Al día de hoy se han realizado 14295 nuevos artículos utilizando esta herramienta, 1872 de ellos en español.  La mayoría de los artículos traducidos al español se realizaron desde el idioma inglés. En total, la mayor cantidad de traducciones se realizaron en Wikipedia en catalán, Wikipedia en español y Wikipedia en francés. Se puede acceder a las estadísticas disponibles haciendo clic <a href="https://es.wikipedia.org/wiki/Especial:ContentTranslationStats">aquí</a>.</p>
+<p><a href="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones.png"><img class="  wp-image-2756 aligncenter" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones.png" alt="Tendencia traducciones" width="554" height="254" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones.png 984w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones-300x138.png 300w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones-768x353.png 768w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/Tendencia-traducciones-400x184.png 400w" sizes="(max-width: 554px) 100vw, 554px" /></a></p>
+<p>Para probarla es necesario:</p>
+<ul>
+<li>Iniciar sesión en Wikipedia (o crear una cuenta)</li>
+<li>Activar la herramienta «Traducción de contenidos» en la sección Beta.</li>
+<li>Hacer clic en tu página de Contribuciones y hacer clic en «Traducción» en la sección Contribución nueva.</li>
+</ul>
+<p>¡Probala y contános que te parece!</p>
+<p>Te dejamos un <a href="https://upload.wikimedia.org/wikipedia/commons/0/05/Tutorial_herramienta_de_traducci%C3%B3n_2015.pdf">tutorial</a> para actualizar la herramienta de traducción.</p>
+                                                    </div><!-- end article content --> 
+                    <!-- TAGS -->
+                    <!-- NAV -->
+                     
+                                <div class="s-post-nav"><div class="nav-btn hide-nav nav-prev"><a href="https://www.wikimedia.org.ar/2015/08/05/el-desafio-de-institucionalizar-las-actividades-de-wikimedia-en-un-proyecto-a-largo-plazo/"><span class="icon"><i class="fa fa-long-arrow-left"></i></span></a><div class="nav-c-wrap bk_no_thumb"><div class="nav-title"><span>Historia previa</span><h3>El desafío de institucionalizar las actividades de ...</h3></div><a class="bk-cover-link" href="https://www.wikimedia.org.ar/2015/08/05/el-desafio-de-institucionalizar-las-actividades-de-wikimedia-en-un-proyecto-a-largo-plazo/"></a></div></div><div class="nav-btn hide-nav nav-next"><a href="https://www.wikimedia.org.ar/2015/08/14/2800/"><span class="icon"><i class="fa fa-long-arrow-right"></i></span></a><div class="nav-c-wrap "><div class="thumb"><img width="130" height="130" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/editatón-Colón-FB-130x130.png" class="attachment-vipertf-130-130 size-vipertf-130-130 wp-post-image" alt="" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2015/08/editatón-Colón-FB-130x130.png 130w, https://www.wikimedia.org.ar/wp-content/uploads/2015/08/editatón-Colón-FB-150x150.png 150w" sizes="(max-width: 130px) 100vw, 130px" /></div><div class="nav-title"><span>Próxima historia</span><h3>Editatón en el Teatro Colón</h3></div><a class="bk-cover-link" href="https://www.wikimedia.org.ar/2015/08/14/2800/"></a></div></div></div>                                                    <!-- SHARE BOX -->
+                                                                                        
+                        <div class="share-box-wrap"><div class="share-box"><div class="share-total-wrap"><div class="share-total"><div class="share-total__value">0</div><div class="share-total__title">Compartidos</div></div></div><!-- End share-total-wrap --><ul class="social-share"><li id="facebook" class="bk-share bk_facebook_share" data-url="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/" data-text="Nueva herramienta de traducción en Wikipedia" data-title="Like"><div class="share-item__icon"><a onClick="window.open('http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F"><i class="fa fa-facebook " title="Facebook"></i></a></div><div class="share-item__value">0</div></li><li class="bk_twitter_share"><div class="share-item__icon"><a onClick="window.open('http://twitter.com/share?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F&amp;text=Nueva%20herramienta%20de%20traducción%20en%20Wikipedia','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" href="http://twitter.com/share?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F&amp;text=Nueva%20herramienta%20de%20traducción%20en%20Wikipedia"><i class="fa fa-twitter " title="Tweet"></i></a></div><div class="bk-twitter-share-icon">+</div></li><li id="gplus" class="bk-share bk_gplus_share" data-url="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/" data-text="Nueva herramienta de traducción en Wikipedia" data-title="G+"><div class="share-item__icon"><a onClick="window.open('https://plus.google.com/share?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F','Google plus','width=585,height=666,left='+(screen.availWidth/2-292)+',top='+(screen.availHeight/2-333)+''); return false;" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F"><i class="fa fa-google-plus " title="Google Plus"></i></a></div><div class="share-item__value">0</div></li><li id="pinterest" class="bk-share bk_pinterest_share" data-url="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/" data-text="Nueva herramienta de traducción en Wikipedia" data-title="Pinterest"><div class="share-item__icon"><a href="javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest " title="Pinterest"></i></a></div><div class="share-item__value">0</div></li><li id="linkedin" class="bk-share bk_linkedin_share" data-url="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/" data-text="Nueva herramienta de traducción en Wikipedia" data-title="Linkedin"><div class="share-item__icon"><a onClick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F','Linkedin','width=863,height=500,left='+(screen.availWidth/2-431)+',top='+(screen.availHeight/2-250)+''); return false;" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.wikimedia.org.ar%2F2015%2F08%2F11%2Fnueva-herramienta-traduccion-wikipedia%2F"><i class="fa fa-linkedin " title="Linkedin"></i></a></div><div class="share-item__value">0</div></li></ul></div></div>                    <!-- AUTHOR BOX -->
+                     
+                    <meta itemprop="author" content="2"><span style="display: none;" itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="isha"></span><meta itemprop="headline " content="Nueva herramienta de traducción en Wikipedia"><meta itemprop="datePublished" content="2015-08-11T13:55:20+00:00"><meta itemprop="dateModified" content="2015-11-26T15:34:18-03:00"><meta itemscope itemprop="mainEntityOfPage" content="" itemType="https://schema.org/WebPage" itemid="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/"/><span style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span style="display: none;" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://www.wikimedia.org.ar/wp-content/uploads/2017/06/Wikimedia_Argentina_logo_-_horizontal.png"></span><meta itemprop="name" content="Wikimedia Argentina"></span><span style="display: none;" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://www.wikimedia.org.ar/wp-content/uploads/2015/07/300px-Wikipedia-puzzleglobe-V2.svg_.png"><meta itemprop="width" content="300"><meta itemprop="height" content="274"></span><meta itemprop="interactionCount" content="UserComments:1"/><!-- RELATED POST -->
+                    <!-- COMMENT BOX -->
+                                            <div class="comment-box clearfix">
+                            
+    <div id="comments" class="comments-area clear-fix">
+                        <div class="comments-area-title">
+                <h3>
+                    1 comment                </h3>
+            </div><!-- End Comment Area Title -->
+                                                <ol class="commentlist">
+                		<li class="comment even thread-even depth-1">
+			<article id="comment-15245" class="comment-article  media">
+                <header class="comment-author clear-fix">
+                    <div class="comment-avatar">
+                        <img alt='' src='https://secure.gravatar.com/avatar/471cfeacdfa98b0f13e77b61936923d8?s=60&#038;d=http%3A%2F%2Fwww.wikimedia.org.ar%2Fwp-content%2Fuploads%2F2013%2F07%2Favatar.jpg&#038;r=g' srcset='https://secure.gravatar.com/avatar/471cfeacdfa98b0f13e77b61936923d8?s=120&#038;d=http%3A%2F%2Fwww.wikimedia.org.ar%2Fwp-content%2Fuploads%2F2013%2F07%2Favatar.jpg&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />  
+                    </div>
+                        <span class="comment-author-name">melissa tamani</span>    					          <span class="comment-time" datetime="2018-05-07T18:12:29-03:00"><a href="https://www.wikimedia.org.ar/2015/08/11/nueva-herramienta-traduccion-wikipedia/#comment-15245" class="comment-timestamp">7 mayo, 2018 t 18:12 </a></span>
+                        <span class="comment-links">
+                            <a rel='nofollow' class='comment-reply-link' href='/2015/08/11/nueva-herramienta-traduccion-wikipedia/?replytocom=15245#respond' data-commentid="15245" data-postid="2751" data-belowelement="comment-15245" data-respondelement="respond" aria-label='Responder a melissa tamani'>Responder</a>                        </span>
+                    </header><!-- .comment-meta -->
+                
+                <div class="comment-text">
+                    				
+    				    				<section class="comment-content">
+    					<p>Muchas de nuestras organizadoras y editoras en Arte+Feminismo traducen artículos sin emplear esta herramienta. Estaba a punto de crear una guía, pero decidí buscar antes si esta no existía ya y encontré esto. Gracias, Wikimedia Argentina! Un abrazo desde Lima!</p>
+    				</section>
+                </div>
+			</article>
+		<!-- </li> is added by WordPress automatically -->
+		</li><!-- #comment-## -->
+            </ol><!-- .commentlist -->
+
+                                </div><!-- #comments .comments-area -->
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Dejar una respuesta <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/08/11/nueva-herramienta-traduccion-wikipedia/#respond" style="display:none;">Cancelar respuesta</a></small></h3>			<form action="https://www.wikimedia.org.ar/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Mensaje"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" placeholder="Nombre*..." size="30"  aria-required='true' /></p><!--
+--><p class="comment-form-email"><input id="email" name="email" size="30" type="text" placeholder="Correo-E*..."  aria-required='true' /></p><!--
+--><p class="comment-form-url"><input id="url" name="url" size="30" placeholder="Página web..." type="text"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Guardar mi nombre, correo electrónico y sitio web en este navegador para la próxima vez que haga un comentario.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Enviar" /> <input type='hidden' name='comment_post_ID' value='2751' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="39890ee3ce" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="41"/></p>			</form>
+			</div><!-- #respond -->
+	                        </div> <!-- End Comment Box -->
+                                        </div>
+                                            <div class="widget recommend-box"><a class="close" href="#" title="Close"><i class="fa fa-long-arrow-right"></i></a><h3></h3><div class="entries"><ul class="list-small-post"><li class="small-post content_out clearfix">        <div class="small-thumbnail-wrapper">
+            <div class="thumb hide-thumb"><a href="https://www.wikimedia.org.ar/2013/08/17/finalizo-wikimania-2013-pero-el-debate-continua/"><img width="130" height="130" src="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Wikimania_2013_Group_Photograph-130x130.jpg" class="attachment-vipertf-130-130 size-vipertf-130-130 wp-post-image" alt="" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Wikimania_2013_Group_Photograph-130x130.jpg 130w, https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Wikimania_2013_Group_Photograph-150x150.jpg 150w" sizes="(max-width: 130px) 100vw, 130px" /></a> <!-- close a tag --></div> <!-- close thumb -->        </div>
+        <div class="post-c-wrap">
+            <h4 class="title"><a href="https://www.wikimedia.org.ar/2013/08/17/finalizo-wikimania-2013-pero-el-debate-continua/">Finalizó Wikimanía 2013, pero&#8230; ¡el debate continúa!</a></h4>            <div class="meta"><div class="post-category"><a href="https://www.wikimedia.org.ar/category/actividades/">Actividades</a>, <a href="https://www.wikimedia.org.ar/category/comunidad/">Comunidad</a></div><div class="post-date">17  de agosto de 2013</div></div> 
+        </div>
+        </li><!-- End post --><li class="small-post content_out clearfix">        <div class="small-thumbnail-wrapper">
+            <div class="thumb hide-thumb"><a href="https://www.wikimedia.org.ar/2013/08/28/leyes-que-ahogan-la-creatividad-repasamos-la-conferencia-de-lawrence-lessig-en-buenos-aires/"><img width="130" height="130" src="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Conferencia_de_Lawrence_Lessig._Creative_Commons_Global_Summit_2013_14-130x130.jpg" class="attachment-vipertf-130-130 size-vipertf-130-130 wp-post-image" alt="" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Conferencia_de_Lawrence_Lessig._Creative_Commons_Global_Summit_2013_14-130x130.jpg 130w, https://www.wikimedia.org.ar/wp-content/uploads/2013/08/Conferencia_de_Lawrence_Lessig._Creative_Commons_Global_Summit_2013_14-150x150.jpg 150w" sizes="(max-width: 130px) 100vw, 130px" /></a> <!-- close a tag --></div> <!-- close thumb -->        </div>
+        <div class="post-c-wrap">
+            <h4 class="title"><a href="https://www.wikimedia.org.ar/2013/08/28/leyes-que-ahogan-la-creatividad-repasamos-la-conferencia-de-lawrence-lessig-en-buenos-aires/">Leyes que ahogan la creatividad: repasamos la conferencia de Lawrence Lessig en Buenos Aires</a></h4>            <div class="meta"><div class="post-category"><a href="https://www.wikimedia.org.ar/category/actividades/">Actividades</a>, <a href="https://www.wikimedia.org.ar/category/noticias/">Noticias</a></div><div class="post-date">28  de agosto de 2013</div></div> 
+        </div>
+        </li><!-- End post --><li class="small-post content_out clearfix">        <div class="small-thumbnail-wrapper">
+            <div class="thumb hide-thumb"><a href="https://www.wikimedia.org.ar/2015/02/28/editaton-en-fundacion-bama/"><img width="130" height="130" src="https://www.wikimedia.org.ar/wp-content/uploads/2015/02/IMG_20150225_1103453301-130x130.jpg" class="attachment-vipertf-130-130 size-vipertf-130-130 wp-post-image" alt="" srcset="https://www.wikimedia.org.ar/wp-content/uploads/2015/02/IMG_20150225_1103453301-130x130.jpg 130w, https://www.wikimedia.org.ar/wp-content/uploads/2015/02/IMG_20150225_1103453301-150x150.jpg 150w" sizes="(max-width: 130px) 100vw, 130px" /></a> <!-- close a tag --></div> <!-- close thumb -->        </div>
+        <div class="post-c-wrap">
+            <h4 class="title"><a href="https://www.wikimedia.org.ar/2015/02/28/editaton-en-fundacion-bama/">Editatón en Fundación BAMÁ</a></h4>            <div class="meta"><div class="post-category"><a href="https://www.wikimedia.org.ar/category/actividades/">Actividades</a>, <a href="https://www.wikimedia.org.ar/category/noticias/">Noticias</a></div><div class="post-date">28  de febrero de 2015</div></div> 
+        </div>
+        </li><!-- End post --></ul> <!-- End list-post --></div></div><!--recommend-box -->                                        <!-- Sidebar -->
+                                        <div class="sidebar col-md-4">
+                        <aside class="sidebar-wrap " id="bk-single-sidebar">
+                            <aside id="smart-social-media-widget-2" class="widget smart-social-media-widget"><div class="bk-header"><div class="widget-title"><h3>Redes Sociales</h3></div></div>
+			<div class="ssmw-first-row">
+
+			
+					<p class="ssmw-simple ssmw-button-container ssmw-center ssmw-width-50" >
+						<a target="_blank" href="https://www.facebook.com/WikimediaArgentina/" class="ssmw-fade ssmw-button ssmw-color-black ssmw-icon-28px ssmw-facebook">
+
+						</a>
+					</p>
+
+					
+					<p class="ssmw-simple ssmw-button-container ssmw-center ssmw-width-50" >
+						<a target="_blank" href="https://twitter.com/wikimedia_ar" class="ssmw-fade ssmw-button ssmw-color-black ssmw-icon-28px ssmw-twitter">
+
+						</a>
+					</p>
+
+											</div>
+						<div class="ssmw-second-row">
+						
+					<p class="ssmw-simple ssmw-button-container ssmw-center ssmw-width-50" >
+						<a target="_blank" href="https://www.instagram.com/wikimedia_ar/" class="ssmw-fade ssmw-button ssmw-color-black ssmw-icon-28px ssmw-instagram">
+
+						</a>
+					</p>
+
+					
+					<p class="ssmw-simple ssmw-button-container ssmw-center ssmw-width-50" >
+						<a target="_blank" href="https://www.youtube.com/channel/UCv5_XQA53DDuAjLLQu-6-AA" class="ssmw-fade ssmw-button ssmw-color-black ssmw-icon-28px ssmw-youtube">
+
+						</a>
+					</p>
+
+								</div>
+
+	</aside><aside id="text-9" class="widget widget_text">			<div class="textwidget"><div align="center"><a title="Doná" href="https://www.wikimedia.org.ar/donaciones/"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/button-donaciones.jpg" alt="Doná"/></a></div></br>
+<div align="center"><a title="Iberocoop" href="https://meta.wikimedia.org/wiki/Iberocoop:Portada/es"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2013/08/button-iberocoop.jpg" alt="Iberocoop"/></a></div></br></div>
+		</aside>                        </aside>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    
+	                    <div class="footer">
+                   
+                                <div class="footer-content bkwrapper clearfix container">
+                    <div class="row">
+                        <div class="footer-sidebar col-md-4">
+                            <aside id="text-8" class="widget widget_text">			<div class="textwidget"><div align="center"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/06/Wikimedia_Argentina_logo_white.png" alt="Wikimedia Argentina" height="150" width="201"/></div></br>
+</br>
+Wikimedia Argentina no es una representación legal, ni filial de la Fundación Wikimedia Inc. ni posee injerencia sobre los contenidos escritos en los proyectos de la Fundación Wikimedia.
+</br>
+</br>
+A pesar que nuestra organización cuenta mayoritariamente con editores voluntarios de los proyectos de la Fundación Wikimedia, como Wikimedia Argentina no hacemos correcciones a los contenidos ni nos hacemos responsables de los mismos. En caso de encontrar un problema con un artículo en Wikipedia, puede hacer contactarse con los voluntarios por los medios indicados en la página del proyecto.
+</br>
+</br>
+En caso de tener algún problema, ya sea con la Fundación Wikimedia como con alguno de sus proyectos, rogamos contactarse directamente a:
+</br>
+</br>
+Wikimedia Foundation Inc.</br>
+149 New Montgomery Street, 3rd Floor
+San Francisco, CA 94105
+Estados Unidos de América</br>
+<div align="left"><a title="Otros métodos de contacto con la Fundación Wikimedia Inc" href="https://wikimediafoundation.org/wiki/Cont%C3%A1ctenos">Otros métodos de contacto con la Fundación Wikimedia Inc</a></div></div>
+		</aside>                        </div>
+                        <div class="footer-sidebar col-md-4">
+                            <aside id="text-10" class="widget widget_text">			<div class="textwidget"><div align="left"><a title="Wikimedia Argentina" href="https://meta.wikimedia.org/wiki/Wikimedia_Argentina"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/meta-logo.png" alt=Wikimedia Argentina" height="35" width="35"/> Wikimedia Argentina en Meta</a></div></br>
+
+<div align="left"><a title="Página de educación en Outreach " href="https://outreach.wikimedia.org/wiki/Education/Countries/Argentina"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/meta-logo.png" alt=Wikimedia Argentina" height="35" width="35"/> Página de educación en Outreach </a></div></br>
+
+<div align="left"><a title="Cultura y conocimiento abierto" href="https://meta.wikimedia.org/wiki/Wikimedia_Argentina/GLAM/Programa_Cultura_y_Conocimiento_Abierto"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/meta-logo.png" alt=Wikimedia Argentina" height="35" width="35"/> Cultura y conocimiento abierto</a></div></br>
+
+<div align="left"><a title="Proyecto de digitalización" href="https://meta.wikimedia.org/wiki/Wikimedia_Argentina/GLAM/Proyecto_de_digitalizaci%C3%B3n"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/meta-logo.png" alt=Wikimedia Argentina" height="35" width="35"/> Proyecto de digitalización</a></div></br>
+
+<div align="left"><a title="Nuestras guías de aprendizaje" href="https://meta.wikimedia.org/wiki/Category:Learning_Patterns_created_by_Wikimedia_Argentina"><img src="https://www.wikimedia.org.ar/wp-content/uploads/2017/01/meta-logo.png" alt=Wikimedia Argentina" height="35" width="35"/> Nuestras guías de aprendizaje</a></div></br></div>
+		</aside>                        </div>
+                        <div class="footer-sidebar col-md-4">
+                            <aside id="do-etfw-2" class="widget widget-do-etfw">					<div class="bk-header"><div class="widget-title"><h3>Últimos Tweets</h3></div></div>		
+		<a class="twitter-timeline" data-height="400" data-tweet-limit="2" data-theme="dark" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/wikimedia_ar">Tweets by @wikimedia_ar</a>
+</aside>                        </div>
+                    </div>
+                </div>
+                                <div class="footer-lower">
+                    <div class="container">
+                        <div class="footer-inner clearfix">
+                              
+                            <div class="bk-copyright"><a href="http://creativecommons.org/licenses/by/4.0/"></a><br />Esta obra está bajo una <a href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.</div>
+                        </div>
+                    </div>
+                </div>
+    		</div>
+                </div> <!-- Close Page inner Wrap -->
+
+	</div> <!-- Close Page Wrap -->
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.wikimedia.org.ar\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/comment-reply.min.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bkSmoothScroll = {"status":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/theme_plugins.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/onviewport.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/module-load-post.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/menu.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var justified_ids = [];
+var fixed_nav = "2";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/customjs.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/themes/vipertf/js/retina.min.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.wikimedia.org.ar/wp-includes/js/wp-embed.min.js?ver=05b10150bc7a0aacc32b9c73ca9174b1'></script>
+<script async="async" type='text/javascript' src='https://www.wikimedia.org.ar/wp-content/plugins/akismet/_inc/form.js?ver=4.1.1'></script>
+</body>
+
+</html>

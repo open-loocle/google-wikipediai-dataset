@@ -1,0 +1,637 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!--Output date : 14:32 2008-11-27, version : 3.0.38, Copyright QA International, 2008, All rights reserved.-->
+<!-- -->
+<meta http-equiv="content-type" name="content-type" content="text/html; charset=utf-8" />
+<title>SPORTS &#38 GAMES :: BALL SPORTS images - Visual Dictionary Online</title>
+<script type="text/javascript" src="../includes/scripts/js/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="../includes/scripts/js/rollOver.js"></script>
+<script type="text/javascript" src="../includes/scripts/js/prototype.js"></script>
+<script type="text/javascript" src="/includes/scripts/js/truncate.js"></script>
+<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+<body>
+    <div class="frame">
+        <div class="main_logo"><a href="/index.php"><img src="/images/merriam-webster-logo.gif" alt="Merriam-Webster Official Logo" /></a></div>
+        <div class="h">		
+<h1><a href="http://www.quebec-amerique.com/boutique/en/" class="boutique" onClick="javascript: pageTracker._trackPageview('/outgoing/store_from_header');"></a><a href="/index.php"><span>Visual Dictionary Online</span></a></h1>
+<ul class="menuHeader">
+			<li><a href="/about-visual_overview.php">About the visual</a></li>
+				<li><a href="/tools_blog-tools.php">Tools</a></li>
+					<li><a href="/products_books.php">books</a></li>
+				<li><a href="http://www.ikonet.com/en/thevisualplus/">apps</a></li>
+					<li><a href="/products_software.php">Downloads</a></li>
+				<li class="end"><a href="/about-us_company.php">About us</a></li>
+		
+</ul>
+<div class="merriam"><a href="http://www.m-w.com" onclick="window.open('http://www.m-w.com'); return false;">Merriam-Webster Online &gt;</a></div></div>
+        <div class="c">
+            <div class="c1">
+                <div class="searchbox"> ﻿<h1><span>Index</span></h1>
+<div class="saisie">
+<!--<input type="text"></input>-->
+<script type="text/javascript">
+
+function demo() {
+	window.open('products_software_demo.php', 'name','status=yes, scrollbars=no, width=320, height=255')
+}
+
+
+
+
+function filterUl(p_sCsvMasterValues, p_sIdTarget, p_sUrl) {
+
+    var postBody = {
+        FilterFrom: p_sCsvMasterValues
+    }
+
+    var retrieveData = {
+        method: 'post',
+        postBody: $H(postBody).toQueryString(),
+        onFailure: function(t) {
+
+        },
+        onSuccess: function(t) {
+
+            var oJson = t.responseText.evalJSON();
+            var oNode;
+            var oTextNode;
+            var oTarget = $(p_sIdTarget);
+
+            oTarget.immediateDescendants().invoke('remove');
+
+            var icpt = 1;
+            oJson.elements.each(
+                function(e) {
+                    oNode = document.createElement("li");
+
+                        oLink = document.createElement("a");
+                       // oLink.id = e[1];
+                      //  oLink.name = e[1];
+                        oLink.innerHTML = e[1];
+                        oLink.href = '#';
+
+                       Event.observe(oLink, 'click', function(e) {
+                            fSelect(this); return false;
+                        }.bindAsEventListener(oLink));
+
+                    oNode.appendChild(oLink);
+
+                                        oTarget.appendChild(oNode);
+                    if( icpt == 1 )
+                    {
+                        oLink.addClassName('highlight');
+                        $('s_search_result').value = e[1];
+                    }
+                    icpt = icpt+1;
+                }
+            )
+        }
+    }
+
+    new Ajax.Request(p_sUrl, retrieveData);
+}
+var iIdEvent = 1;
+function Init() {
+
+       Event.observe('s_search_box', 'keyup',
+            function() {
+                iIdEvent = iIdEvent + 1;
+                var iActual = iIdEvent;
+                setTimeout( "callit('s_search_box',"+iActual+")",500);
+                }
+        );
+    }
+    function callit(s_searchBox, id){
+        if( iIdEvent == id )
+        {
+            filterUl($F(s_searchBox), 'result_list', '/includes/ajax/fill_search_result.php?s_key_word=' + $('s_search_box').value);
+        }
+
+    }
+
+    function fSelect(e) {
+        $$('ul.result_list li a').invoke('removeClassName', 'highlight');
+        e.addClassName('highlight');
+        $('s_search_result').value = e.innerHTML;
+
+        $('search_button').focus();
+    }
+    Event.observe(window, 'load', Init);
+</script>
+    <form name="search_form" id="search_form" method="get" action="/search-results.php">
+
+                <div><input class="search_box" name="s_search_box" type="text" id="s_search_box" value="Enter a word" onclick="this.select(); this.style.color = 'black';"/></div>
+
+        <h3>IMAGES</h3>
+        <div><input type="hidden" name="s_search_result" id="s_search_result"  value="#"/></div>
+
+        <ul class="result_list" id="result_list"><li></li></ul>
+
+        <div><input class="search_button" type="submit" id="search_button" value="Go To" alt=""/></div>
+    </form>
+</div>
+
+        	
+ </div>
+                <div class="themesearch"><span>Theme</span></div>
+					<ul class="menuTheme">
+					<li><a href="../astronomy.php">Astronomy</a></li>
+					<li><a href="../earth.php">Earth</a></li>
+					<li><a href="../plants-gardening.php">Plants & gardening</a></li>
+					<li><a href="../animal-kingdom.php">Animal kingdom</a></li>
+					<li><a href="../human-being.php">Human being</a></li>
+					<li><a href="../food-kitchen.php">Food & kitchen</a></li>
+					<li><a href="../house.php">House</a></li>
+					<li><a href="../clothing-articles.php">Clothing & articles</a></li>
+					<li><a href="../arts-architecture.php">Arts & architecture</a></li>
+					<li><a href="../communications.php">Communications</a></li>
+					<li><a href="../transport-machinery.php">Transport & machinery</a></li>
+					<li><a href="../energy.php">Energy</a></li>
+					<li><a href="../science.php">Science</a></li>
+					<li><a href="../society.php">Society</a></li>
+					</ul>
+					<ul class="menuThemeOpen">
+						<li class="ouvert"><a href="../sports-games.php" class="CGTruncate">Sports & games</a></li>
+						<li><a href="/sports-games/sports-facilities.php" class="CGTruncate">Sports facilities</a></li>
+						<li><a href="/sports-games/track-field.php" class="CGTruncate">Track and field</a></li>
+						<li class="CGTruncate highlight">Ball sports</li>
+						<li><a href="/sports-games/racket-sports.php" class="CGTruncate">Racket sports</a></li>
+						<li><a href="/sports-games/gymnastics.php" class="CGTruncate">Gymnastics</a></li>
+						<li><a href="/sports-games/aquatic-nautical-sports.php" class="CGTruncate">Aquatic and nautical sports</a></li>
+						<li><a href="/sports-games/combat-sports.php" class="CGTruncate">Combat sports</a></li>
+						<li><a href="/sports-games/strength-sports.php" class="CGTruncate">Strength sports</a></li>
+						<li><a href="/sports-games/equestrian-sports.php" class="CGTruncate">Equestrian sports</a></li>
+						<li><a href="/sports-games/precision-accuracy-sports.php" class="CGTruncate">Precision and accuracy sports</a></li>
+						<li><a href="/sports-games/cycling.php" class="CGTruncate">Cycling</a></li>
+						<li><a href="/sports-games/motor-sports.php" class="CGTruncate">Motor sports</a></li>
+						<li><a href="/sports-games/winter-sports.php" class="CGTruncate">Winter sports</a></li>
+						<li><a href="/sports-games/sports-on-wheels.php" class="CGTruncate">Sports on wheels</a></li>
+						<li><a href="/sports-games/aerial-sports.php" class="CGTruncate">Aerial sports</a></li>
+						<li><a href="/sports-games/mountain-sports.php" class="CGTruncate">Mountain sports</a></li>
+						<li><a href="/sports-games/outdoor-leisure.php" class="CGTruncate">Outdoor leisure</a></li>
+						<li><a href="/sports-games/games.php" class="CGTruncate">Games</a></li>
+					</ul>
+                    <div class="feedback">
+                        <a href="/feedback.php">Your feedback</a><br/>
+                        <a href="/help.php">Help</a>
+                    </div>
+            </div>
+            <div class="c2">
+                <div class="advertising"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Merriam-Webster_728X90_leaderboard_TopOfAllPages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7156007925185226"
+     data-ad-slot="7040656725"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div style="text-align:left; margin-left:5px;float:left;">
+<form action="http://visual.merriam-webster.com/search.php" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-7156007925185226:26tokrtiooe" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="75" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+</div>
+<div style="text-align: right;padding-right:2px;">
+		<a href="http://www.ikonet.com/en/"><img src="/images/LogoPoweredByIkonet.png" alt="Powered by ikonet.com" title="Powered by ikonet.com" width="146" height="14"></a>
+</div>
+
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+</div>
+                    <div class="c3">
+                        <div class="breadcrumb">
+                            <span class="breadcrumb"><a href="/index.php">HOME</a> :: <a href="/sports-games.php">SPORTS & GAMES</a> :: <a href="/sports-games/ball-sports.php">BALL SPORTS</a></span>
+                        </div>
+                        <h2 class="subtitle" style="background-image: url(/images/sports-games/sports-games.jpg);"><span>Sports & games</span></h2>
+			<div class="slogant">Activities practiced for recreational purposes (fun, relaxation, health) and often taking the form of competitions sanctioned by official bodies.</div>
+                        <div class="combiner">
+                            <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/icones/ball-sports.jpg" alt="ball sports" title="ball sports" /></a></div>
+                            <div class="titre">
+                            <h1><a href="/sports-games/ball-sports.php">BALL SPORTS</a></h1>Individual or team sports played by throwing or hitting a solid or inflated ball.</div>
+                            <br style="clear: both;"/>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/baseball.jpg" alt="baseball" title="baseball"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">baseball</a></h1>
+                                        Sport with two opposing teams of nine players who attempt to score points by hitting a ball with a bat and running from one base to the next until they reach home plate; a game lasts nine innings, during which teams alternate from offense (at bat) to defense (in the field).
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/baseball/field.php"><img src="/images/sports-games/ball-sports/baseball/field.png" alt="field"  width="84" height="66" title="field image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/player-positions.php"><img src="/images/sports-games/ball-sports/baseball/player-positions.png" alt="player positions"  width="84" height="66" title="player positions image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/pitch.php"><img src="/images/sports-games/ball-sports/baseball/pitch.png" alt="pitch"  width="84" height="66" title="pitch image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/field.php">field</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/player-positions.php">player positions</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/pitch.php">pitch</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/baseball/batter.php"><img src="/images/sports-games/ball-sports/baseball/batter.png" alt="batter"  width="84" height="66" title="batter image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/catcher.php"><img src="/images/sports-games/ball-sports/baseball/catcher.png" alt="catcher"  width="84" height="66" title="catcher image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/baseball.php"><img src="/images/sports-games/ball-sports/baseball/baseball.png" alt="baseball"  width="84" height="66" title="baseball image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/batter.php">batter</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/catcher.php">catcher</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/baseball.php">baseball</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/baseball/cross-section-baseball.php"><img src="/images/sports-games/ball-sports/baseball/cross-section-baseball.png" alt="cross section of a baseball"  width="84" height="66" title="cross section of a baseball image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/bat.php"><img src="/images/sports-games/ball-sports/baseball/bat.png" alt="bat"  width="84" height="66" title="bat image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/baseball/fielders-glove.php"><img src="/images/sports-games/ball-sports/baseball/fielders-glove.png" alt="fielder&#8217s glove"  width="84" height="66" title="fielder&#8217s glove image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/cross-section-baseball.php">cross section of a baseball</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/bat.php">bat</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/baseball/fielders-glove.php">fielder&#8217s glove</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+					<div class="imgCombiner">
+                                        	<a href="/sports-games/ball-sports/softball.php"><img src="/images/sports-games/ball-sports/softball.png" alt="softball" title="softball image" /></a>
+	                                </div>
+                                   	<div class="titre">
+                                        	<h1><a href="/sports-games/ball-sports/softball.php">softball</a></h1>
+                                        	Sport akin to baseball but played on a smaller field; it differs from baseball in that the pitcher throws the ball underhand and not overhand.
+				    	</div>
+                                    	<br style="clear: both;"/>
+				</div> 
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/cricket.jpg" alt="cricket" title="cricket"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">cricket</a></h1>
+                                        Sport with two opposing teams of 11 players who attempt to score points by hitting a ball with a bat and running between two wickets; teams alternate between offense (at the bat) and defense (in the field).
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/cricket/field_1.php"><img src="/images/sports-games/ball-sports/cricket/field_1.png" alt="field&#160;[1]"  width="84" height="66" title="field&#160;[1] image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/cricket/field_2.php"><img src="/images/sports-games/ball-sports/cricket/field_2.png" alt="field&#160;[2]"  width="84" height="66" title="field&#160;[2] image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/cricket/field_3.php"><img src="/images/sports-games/ball-sports/cricket/field_3.png" alt="field&#160;[3]"  width="84" height="66" title="field&#160;[3] image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/field_1.php">field&#160;[1]</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/field_2.php">field&#160;[2]</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/field_3.php">field&#160;[3]</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/cricket/cricket-player-batsman.php"><img src="/images/sports-games/ball-sports/cricket/cricket-player-batsman.png" alt="cricket player: batsman"  width="84" height="66" title="cricket player: batsman image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/cricket/cricket-ball.php"><img src="/images/sports-games/ball-sports/cricket/cricket-ball.png" alt="cricket ball"  width="84" height="66" title="cricket ball image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/cricket/bat.php"><img src="/images/sports-games/ball-sports/cricket/bat.png" alt="bat"  width="84" height="66" title="bat image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/cricket-player-batsman.php">cricket player: batsman</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/cricket-ball.php">cricket ball</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/cricket/bat.php">bat</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/field-hockey.jpg" alt="field hockey" title="field hockey"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">field hockey</a></h1>
+                                        Sport with two opposing teams of 11 players who attempt to score in the opponent&#8217s goal by hitting a ball with a stick.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/field-hockey/playing-field.php"><img src="/images/sports-games/ball-sports/field-hockey/playing-field.png" alt="playing field"  width="84" height="66" title="playing field image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/field-hockey/field-player.php"><img src="/images/sports-games/ball-sports/field-hockey/field-player.png" alt="field player"  width="84" height="66" title="field player image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/field-hockey/goalkeeper.php"><img src="/images/sports-games/ball-sports/field-hockey/goalkeeper.png" alt="goalkeeper"  width="84" height="66" title="goalkeeper image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/field-hockey/playing-field.php">playing field</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/field-hockey/field-player.php">field player</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/field-hockey/goalkeeper.php">goalkeeper</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/field-hockey/stick.php"><img src="/images/sports-games/ball-sports/field-hockey/stick.png" alt="stick"  width="84" height="66" title="stick image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/field-hockey/stick.php">stick</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/soccer.jpg" alt="soccer" title="soccer"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">soccer</a></h1>
+                                        Sport with two opposing teams of 11 players who attempt to score in the opponent&#8217s goal by kicking or knocking the ball in with any part of the body except the arms and hands.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/soccer/playing-field.php"><img src="/images/sports-games/ball-sports/soccer/playing-field.png" alt="playing field"  width="84" height="66" title="playing field image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/soccer/player-positions.php"><img src="/images/sports-games/ball-sports/soccer/player-positions.png" alt="player positions"  width="84" height="66" title="player positions image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/soccer/soccer-player.php"><img src="/images/sports-games/ball-sports/soccer/soccer-player.png" alt="soccer player"  width="84" height="66" title="soccer player image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/soccer/playing-field.php">playing field</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/soccer/player-positions.php">player positions</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/soccer/soccer-player.php">soccer player</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/rugby.jpg" alt="rugby" title="rugby"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">rugby</a></h1>
+                                        Sport with two opposing teams of 15 players that attempt to score points by carrying the ball into the in goal or kicking it between the uprights.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/rugby/field.php"><img src="/images/sports-games/ball-sports/rugby/field.png" alt="field"  width="84" height="66" title="field image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/rugby/players-positions.php"><img src="/images/sports-games/ball-sports/rugby/players-positions.png" alt="players&#8217 positions"  width="84" height="66" title="players&#8217 positions image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/rugby/rugby-player.php"><img src="/images/sports-games/ball-sports/rugby/rugby-player.png" alt="rugby player"  width="84" height="66" title="rugby player image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/rugby/field.php">field</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/rugby/players-positions.php">players&#8217 positions</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/rugby/rugby-player.php">rugby player</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/football.jpg" alt="football" title="football"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">football</a></h1>
+                                        Sport with two opposing teams of 11 players who attempt to score points by moving the ball into the end zone or kicking it between the goalposts.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/football/playing-field.php"><img src="/images/sports-games/ball-sports/football/playing-field.png" alt="playing field"  width="84" height="66" title="playing field image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/football/goal.php"><img src="/images/sports-games/ball-sports/football/goal.png" alt="goal"  width="84" height="66" title="goal image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/football/scrimmage-offense.php"><img src="/images/sports-games/ball-sports/football/scrimmage-offense.png" alt="scrimmage: offense"  width="84" height="66" title="scrimmage: offense image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/playing-field.php">playing field</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/goal.php">goal</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/scrimmage-offense.php">scrimmage: offense</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/football/scrimmage-defense.php"><img src="/images/sports-games/ball-sports/football/scrimmage-defense.png" alt="scrimmage: defense"  width="84" height="66" title="scrimmage: defense image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/football/football-player.php"><img src="/images/sports-games/ball-sports/football/football-player.png" alt="football player"  width="84" height="66" title="football player image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/football/protective-equipment_1.php"><img src="/images/sports-games/ball-sports/football/protective-equipment_1.png" alt="protective equipment&#160;[1]"  width="84" height="66" title="protective equipment&#160;[1] image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/scrimmage-defense.php">scrimmage: defense</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/football-player.php">football player</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/protective-equipment_1.php">protective equipment&#160;[1]</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/football/protective-equipment_2.php"><img src="/images/sports-games/ball-sports/football/protective-equipment_2.png" alt="protective equipment&#160;[2]"  width="84" height="66" title="protective equipment&#160;[2] image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/football/protective-equipment_2.php">protective equipment&#160;[2]</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+					<div class="imgCombiner">
+                                        	<a href="/sports-games/ball-sports/canadian-football.php"><img src="/images/sports-games/ball-sports/canadian-football.png" alt="Canadian football" title="Canadian football image" /></a>
+	                                </div>
+                                   	<div class="titre">
+                                        	<h1><a href="/sports-games/ball-sports/canadian-football.php">Canadian football</a></h1>
+                                        	Similar to American football, it has two opposing teams of 12 players; the main difference is that there are only three downs to gain 10 yards.
+				    	</div>
+                                    	<br style="clear: both;"/>
+				</div> 
+                            </div>
+                              <div >
+				<div class="combiner">
+					<div class="imgCombiner">
+                                        	<a href="/sports-games/ball-sports/netball.php"><img src="/images/sports-games/ball-sports/netball.png" alt="netball" title="netball image" /></a>
+	                                </div>
+                                   	<div class="titre">
+                                        	<h1><a href="/sports-games/ball-sports/netball.php">netball</a></h1>
+                                        	Sport played mainly by women with two opposing teams of seven players; teams score points by throwing a ball into the opponent&#8217s basket.
+				    	</div>
+                                    	<br style="clear: both;"/>
+				</div> 
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/basketball.jpg" alt="basketball" title="basketball"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">basketball</a></h1>
+                                        Sport with two opposing teams of five players who score points by throwing a ball into the opposing team&#8217s basket.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/basketball/court.php"><img src="/images/sports-games/ball-sports/basketball/court.png" alt="court"  width="84" height="66" title="court image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/basketball/player-positions.php"><img src="/images/sports-games/ball-sports/basketball/player-positions.png" alt="player positions"  width="84" height="66" title="player positions image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/basketball/backstop.php"><img src="/images/sports-games/ball-sports/basketball/backstop.png" alt="backstop"  width="84" height="66" title="backstop image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/basketball/court.php">court</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/basketball/player-positions.php">player positions</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/basketball/backstop.php">backstop</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/basketball/basketball-player.php"><img src="/images/sports-games/ball-sports/basketball/basketball-player.png" alt="basketball player"  width="84" height="66" title="basketball player image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/basketball/basketball-player.php">basketball player</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/volleyball.jpg" alt="volleyball" title="volleyball"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">volleyball</a></h1>
+                                        Sport with two opposing teams of six players who try to ground the ball in the opposing zone by hitting it over the net with their hands.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/volleyball/court.php"><img src="/images/sports-games/ball-sports/volleyball/court.png" alt="court"  width="84" height="66" title="court image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/volleyball/techniques_1.php"><img src="/images/sports-games/ball-sports/volleyball/techniques_1.png" alt="techniques&#160;[1]"  width="84" height="66" title="techniques&#160;[1] image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/volleyball/techniques_2.php"><img src="/images/sports-games/ball-sports/volleyball/techniques_2.png" alt="techniques&#160;[2]"  width="84" height="66" title="techniques&#160;[2] image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/volleyball/court.php">court</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/volleyball/techniques_1.php">techniques&#160;[1]</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/volleyball/techniques_2.php">techniques&#160;[2]</a></td>
+                                              </tr>
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/volleyball/beach-volleyball.php"><img src="/images/sports-games/ball-sports/volleyball/beach-volleyball.png" alt="beach volleyball"  width="84" height="66" title="beach volleyball image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/volleyball/beach-volleyball.php">beach volleyball</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                              <div >
+				<div class="combiner">
+                                    <div class="imgCombiner"><a href="/sports-games/ball-sports.php"><img src="/images/sports-games/ball-sports/icones/handball.jpg" alt="handball" title="handball"/></a></div>
+   				    <div class="titre">
+                                        <h1><a href="/sports-games/ball-sports.php">handball</a></h1>
+                                        Sport with two opposing teams of seven players who try to score points by throwing the ball into the opposing team&#8217s net.
+                                    </div>
+                                    <br style="clear: both;"/>
+                                    <div class="algcentre">
+                                        <div class="combiner">
+                                            <table class="tableauImage">
+                                              <tr>
+                                                	<td><a href="/sports-games/ball-sports/handball/court.php"><img src="/images/sports-games/ball-sports/handball/court.png" alt="court"  width="84" height="66" title="court image" /></a></td>
+                                                	<td><a href="/sports-games/ball-sports/handball/player-positions.php"><img src="/images/sports-games/ball-sports/handball/player-positions.png" alt="player positions"  width="84" height="66" title="player positions image" /></a></td>
+                                              </tr>
+                                              <tr>
+			      			<td class="title"><a href="/sports-games/ball-sports/handball/court.php">court</a></td>
+			      			<td class="title"><a href="/sports-games/ball-sports/handball/player-positions.php">player positions</a></td>
+                                              </tr>
+                                            </table>
+                                        </div>
+                                    </div>   
+				</div>  
+                            </div>
+                      </div>                                    
+                </div>
+                <div class="c4">
+		<div class="pub">	<div class="advertising left">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Merriam-Webster_300x250_BigBox1-TopOfAllPages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7156007925185226"
+     data-ad-slot="8729356048"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Merriam-Webster_300X250_BigBox2_TopOfAllPages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7156007925185226"
+     data-ad-slot="9280490271"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	
+
+
+
+</div>
+
+<div class="box" style="height:250px; background: url(/images/visualplus.jpg) center;cursor:pointer;" onclick="location.href='https://itunes.apple.com/us/app/merriam-webster-the-visual-+/id963177153?l=fr&ls=1&mt=8'"></div>
+
+<div style="margin-top:10px; margin-bottom:10px; color:#000;">
+<a href="http://www.ikonet.com"><span style="color:#000;">English French Visual Dictionary</span></a><br />
+<a href="http://www.snappywords.com"><span style="color:#000;">Free Online Dictionary</span></a>
+</div>
+
+
+</div>
+               	</div>
+                <div class="advertising bottom">
+</div>
+            </div>
+            <br style="clear:both" />
+        </div>
+        <div class="f"><div id="nav_footer">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7156007925185226";
+/* Merriam-Webster_468X15_Homepage_Bottom */
+google_ad_slot = "1454138353";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br />
+	<a href="/advertising-info.php">ADVERTISING INFO</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.ikonet.com/en/visualdictionary/static/us/contact">CONTACT US</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="/about-us_privacy-policy.php">PRIVACY POLICY</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="/terms-of-use.php">TERMS OF USE</a>
+</div>
+<br /><br style="clear:both" />
+<div class="cyberliens"><a href="http://www.ikonet.com/en/">Powered by ikonet.com</a><br><a href="http://www.qa-international.com/" onclick="window.open(this.href); return false;">&copy; QA INTERNATIONAL 2021</a></div>
+<br style="clear:both" /></div>
+    </div>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3846080-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

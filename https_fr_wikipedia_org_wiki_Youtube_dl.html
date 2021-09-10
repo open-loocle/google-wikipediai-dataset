@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>youtube-dl — Wikipédia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"wgRequestId":"47595aae-ec34-4e8b-be62-3d5fc13cfe7b","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Youtube-dl","wgTitle":"Youtube-dl","wgCurRevisionId":184377142,"wgRevisionId":184377142,"wgArticleId":14219255,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Article contenant un appel à traduction en anglais","Wikipédia:ébauche logiciel libre","Page utilisant P170","Page utilisant P571","Page utilisant P348","Page utilisant P1324","Page utilisant P277","Page utilisant P306","Page utilisant P31","Page utilisant P275","Page utilisant P2078",
+"Page utilisant P856","Article utilisant une Infobox","Article avec une section vide ou incomplète","Portail:Logiciels libres/Articles liés","Portail:Logiciel/Articles liés","Portail:Informatique/Articles liés","Portail:Internet/Articles liés","Portail:Médias/Articles liés","Portail:Technologies/Articles liés","Portail:Sciences/Articles liés","YouTube","Gestionnaire de téléchargement","Logiciel libre","Logiciel pour Unix","Logiciel pour Windows","Logiciel écrit en Python","Produit lancé en 2006"],"wgPageContentLanguage":"fr","wgPageContentModel":"wikitext","wgRelevantPageName":"Youtube-dl","wgRelevantArticleId":14219255,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":8,"wgVisualEditor":{"pageLanguageCode":"fr","pageLanguageDir":"ltr","pageVariantFallbacks":"fr"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,
+"watchlist":!0,"tagline":!0},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"français","wgNoticeProject":"wikipedia","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":!0,"wgGENewcomerTasksGuidanceEnabled":!0,"wgGEAskQuestionEnabled":!0,"wgGELinkRecommendationsFrontendEnabled":!0,"wgWikibaseItemId":"Q28401317"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","mediawiki.ui.button":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","mediawiki.ui.icon":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc",
+"skins.vector.js","ext.gadget.ArchiveLinks","ext.gadget.MonobookToolbarStandard","ext.gadget.Wdsearch","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});mw.user.options.set({"variant":"fr"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=fr&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.ui.button%2Cicon%7Cskins.vector.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=fr&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=fr&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.37.0-wmf.21"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="youtube-dl — Wikipédia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//fr.m.wikipedia.org/wiki/Youtube-dl"/>
+<link rel="alternate" type="application/x-wiki" title="Modifier" href="/w/index.php?title=Youtube-dl&amp;action=edit"/>
+<link rel="edit" title="Modifier" href="/w/index.php?title=Youtube-dl&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipédia (fr)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//fr.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://fr.wikipedia.org/wiki/Youtube-dl"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Youtube-dl rootpage-Youtube-dl skin-vector action-view skin-vector-search-vue"><div class="mw-page-container">
+	<a class="mw-jump-link" href="#content">Aller au contenu</a>
+	<div class="mw-page-container-inner">
+
+<input
+	type="checkbox"
+	id="mw-sidebar-checkbox"
+	class="mw-checkbox-hack-checkbox"
+	checked>
+
+<header class="mw-header">
+	<label
+		id="mw-sidebar-button"
+		class="mw-checkbox-hack-button mw-ui-icon mw-ui-icon-element"
+		for="mw-sidebar-checkbox"
+		role="button"
+		aria-controls="mw-panel"
+		data-event-name="ui.sidebar"
+		tabindex="0"
+		title="Menu principal">
+		Afficher / masquer la barre latérale
+	</label>
+	<a href="/wiki/Wikip%C3%A9dia:Accueil_principal" class="mw-logo">
+		<img class="mw-logo-icon" src="/static/images/mobile/copyright/wikipedia.png" alt=""
+			aria-hidden="true" height="50" width="50">
+		<span class="mw-logo-container">
+			<img class="mw-logo-wordmark" alt="Wikipédia"
+				src="/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" width="119" height="18">
+			<img class="mw-logo-tagline"
+				alt="l&#039;encyclopédie libre"
+				src="/static/images/mobile/copyright/wikipedia-tagline-fr.svg" width="113" height="13">
+		</span>
+	</a>
+	<div id="p-search" role="search" class="vector-search-box vector-search-box-collapses vector-search-box-show-thumbnail">
+	<div>
+		<h3 >
+			<label for="searchInput">Rechercher</label>
+		</h3>
+		<form action="/w/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-moved">
+				<input type="search" name="search" placeholder="Rechercher dans Wikipédia" autocapitalize="sentences" title="Rechercher dans Wikipédia [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Spécial:Recherche"/>
+				<input type="submit" name="fulltext" value="Rechercher" title="Rechercher les pages comportant ce texte." id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Lire" title="Accédez à une page du même nom si elle existe" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+	<a class="mw-ui-icon mw-ui-icon-wikimedia-search mw-ui-icon-element search-toggle"
+		href="/wiki/Sp%C3%A9cial:Recherche">
+		<span>Rechercher</span>
+	</a>
+</div>
+
+	<div class="vector-user-links">
+	<nav id="p-personal-more" class="mw-portlet mw-portlet-personal-more vector-menu vector-user-menu-more" aria-labelledby="p-personal-more-label" role="navigation" 
+	 >
+	<h3 id="p-personal-more-label" class="vector-menu-heading"><span>Liens utilisateur</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+	<li id="p-createaccount" class="user-links-collapsible-item">
+		<a href="/w/index.php?title=Sp%C3%A9cial:Cr%C3%A9er_un_compte&amp;returnto=Youtube-dl" icon="userAvatar" class="mw-ui-button mw-ui-quiet" title="Nous vous encourageons à créer un compte utilisateur et vous connecter ; ce n’est cependant pas obligatoire."><span>Créer un compte</span></a>
+	</li>
+</ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu vector-user-menu-logged-out vector-menu vector-menu-dropdown" aria-labelledby="p-personal-label" role="navigation"  title="Plus d’options"
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-personal"
+		class="vector-menu-checkbox" aria-labelledby="p-personal-label" />
+	<h3 id="p-personal-label" class="vector-menu-heading mw-ui-icon mw-ui-icon-element mw-ui-icon-wikimedia-ellipsis"><span>Outils personnels</span>
+	</h3>
+	<div class="vector-menu-content">
+		<div class="vector-user-menu-create-account"><a href="/w/index.php?title=Sp%C3%A9cial:Cr%C3%A9er_un_compte&amp;returnto=Youtube-dl" icon="userAvatar" class="user-links-collapsible-item vector-menu-content-item mw-ui-icon mw-ui-icon-before mw-ui-icon-wikimedia-userAvatar" title="Nous vous encourageons à créer un compte utilisateur et vous connecter ; ce n’est cependant pas obligatoire."><span>Créer un compte</span></a></div>
+<div class="vector-user-menu-login"><a href="/w/index.php?title=Sp%C3%A9cial:Connexion&amp;returnto=Youtube-dl" icon="logIn" class="vector-menu-content-item vector-menu-content-item-login mw-ui-icon mw-ui-icon-before mw-ui-icon-wikimedia-logIn" title="Nous vous encourageons à vous connecter ; ce n’est cependant pas obligatoire. [o]" accesskey="o"><span>Se connecter</span></a></div>
+<div class="vector-user-menu-anon-editor">
+	<p>
+		Pages pour les éditeurs déconnectés <a href="/wiki/Aide:Introduction" aria-label="En savoir plus sur la contribution"><span>en savoir plus</span></a>
+	</p>
+</div>
+
+		<ul class="vector-menu-content-list"><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Mes_discussions" title="La page de discussion pour les contributions depuis cette adresse IP [n]" accesskey="n"><span>Discussion</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Mes_contributions" title="Une liste des modifications effectuées depuis cette adresse IP [y]" accesskey="y"><span>Contributions</span></a></li></ul>
+		
+	</div>
+</nav>
+
+</div>
+
+</header>
+
+<div class="mw-workspace-container">
+	<div id="mw-navigation">
+		<h2>Menu de navigation</h2>
+		
+<div id="mw-panel" class="mw-sidebar">
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"><span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Accueil_principal" title="Accueil général [z]" accesskey="z"><span>Accueil</span></a></li><li id="n-thema" class="mw-list-item"><a href="/wiki/Portail:Accueil"><span>Portails thématiques</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Page_au_hasard" title="Affiche un article au hasard [x]" accesskey="x"><span>Article au hasard</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Contact"><span>Contact</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-Contribuer" class="mw-portlet mw-portlet-Contribuer vector-menu vector-menu-portal portal" aria-labelledby="p-Contribuer-label" role="navigation" 
+	 >
+	<h3 id="p-Contribuer-label" class="vector-menu-heading"><span>Contribuer</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-aboutwp" class="mw-list-item"><a href="/wiki/Aide:D%C3%A9buter"><span>Débuter sur Wikipédia</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Aide:Accueil" title="Accès à l’aide"><span>Aide</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Accueil_de_la_communaut%C3%A9" title="À propos du projet, ce que vous pouvez faire, où trouver les informations"><span>Communauté</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Modifications_r%C3%A9centes" title="Liste des modifications récentes sur le wiki [r]" accesskey="r"><span>Modifications récentes</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_fr.wikipedia.org&amp;uselang=fr" title="Soutenez-nous"><span>Faire un don</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"><span>Outils</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pages_li%C3%A9es/Youtube-dl" title="Liste des pages liées qui pointent sur celle-ci [j]" accesskey="j"><span>Pages liées</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Suivi_des_liens/Youtube-dl" rel="nofollow" title="Liste des modifications récentes des pages appelées par celle-ci [k]" accesskey="k"><span>Suivi des pages liées</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Aide:Importer_un_fichier" title="Importer des fichiers [u]" accesskey="u"><span>Téléverser un fichier</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Sp%C3%A9cial:Pages_sp%C3%A9ciales" title="Liste de toutes les pages spéciales [q]" accesskey="q"><span>Pages spéciales</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;oldid=184377142" title="Adresse permanente de cette version de la page"><span>Lien permanent</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;action=info" title="Plus d’informations sur cette page"><span>Informations sur la page</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Sp%C3%A9cial:Citer&amp;page=Youtube-dl&amp;id=184377142&amp;wpFormIdentifier=titleform" title="Informations sur la manière de citer cette page"><span>Citer cette page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q28401317" title="Lien vers l’élément dans le dépôt de données connecté [g]" accesskey="g"><span>Élément Wikidata</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" class="vector-menu-heading"><span>Imprimer / exporter</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Sp%C3%A9cial:Livre&amp;bookcmd=book_creator&amp;referer=Youtube-dl"><span>Créer un livre</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Sp%C3%A9cial:DownloadAsPdf&amp;page=Youtube-dl&amp;action=show-download-screen"><span>Télécharger comme PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;printable=yes" title="Version imprimable de cette page [p]" accesskey="p"><span>Version imprimable</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation" 
+	 >
+	<h3 id="p-wikibase-otherprojects-label" class="vector-menu-heading"><span>Dans d’autres projets</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Youtube-dl" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+		
+	</div>
+</nav>
+
+</div>
+
+		<div id="mw-head">
+			<div class="mw-article-toolbar-container">
+				<div id="left-navigation">
+					<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"><span>Espaces de noms</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Youtube-dl" title="Voir le contenu de la page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="/w/index.php?title=Discussion:Youtube-dl&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion au sujet de cette page de contenu (page inexistante) [t]" accesskey="t"><span>Discussion</span></a></li></ul>
+		
+	</div>
+</nav>
+
+					<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"><span>Variantes</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+				</div>
+				<div id="right-navigation">
+					<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"><span>Affichages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Youtube-dl"><span>Lire</span></a></li><li id="ca-ve-edit" class="mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit" title="Modifier cette page [v]" accesskey="v"><span>Modifier</span></a></li><li id="ca-edit" class="collapsible mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;action=edit" title="Vous pouvez modifier cette page ! [e]" accesskey="e"><span>Modifier le code</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Youtube-dl&amp;action=history" title="Historique des versions de cette page [h]" accesskey="h"><span>Voir l’historique</span></a></li></ul>
+		
+	</div>
+</nav>
+
+					<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="Plus d’options"
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"><span>Plus</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mw-content-container">
+<main id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+
+
+	<header class="mw-body-header">
+			<nav id="p-lang-btn" class="mw-portlet mw-portlet-lang vector-menu vector-menu-dropdown" aria-labelledby="p-lang-btn-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		data-event-name="ui.dropdown-p-lang-btn"
+		class="vector-menu-checkbox" aria-labelledby="p-lang-btn-label" />
+	<h3 id="p-lang-btn-label" class=" vector-menu-heading  mw-ui-icon  mw-ui-icon-before  mw-ui-icon-wikimedia-language  mw-ui-button mw-ui-quiet  mw-interlanguage-selector "><span>10 langues</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — tchèque" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — allemand" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — anglais" lang="en" hreflang="en" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — espagnol" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — indonésien" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — japonais" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — polonais" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — portugais" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — turc" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/Youtube-dl" title="Youtube-dl — chinois" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q28401317#sitelinks-wikipedia" title="Modifier les liens interlangues" class="wbc-editpage">Modifier les liens</a></span></div>
+	</div>
+</nav>
+
+		<h1 id="firstHeading" class="firstHeading" >youtube-dl</h1>
+		<div class="mw-indicators">
+		</div>
+			<div id="siteSub" class="noprint">Un article de Wikipédia, l&#039;encyclopédie libre.</div>
+	</header>
+
+	<div id="bodyContent" class="vector-body">
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="fr" dir="ltr"><div class="mw-parser-output"><div class="bandeau-container bandeau-article bandeau-niveau-ebauche plainlinks metadata ambox"><div class="bandeau-cell bandeau-icone" style="display:table-cell;padding-right:0.5em"><a href="/wiki/Fichier:Nuvola_apps_emacs_vector.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nuvola_apps_emacs_vector.svg/35px-Nuvola_apps_emacs_vector.svg.png" decoding="async" width="35" height="35" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nuvola_apps_emacs_vector.svg/53px-Nuvola_apps_emacs_vector.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nuvola_apps_emacs_vector.svg/70px-Nuvola_apps_emacs_vector.svg.png 2x" data-file-width="160" data-file-height="160" /></a></div><div class="bandeau-cell" style="display:table-cell;padding-right:0.5em"><strong class="bandeau-titre">Cet article est une <a href="/wiki/Aide:%C3%89bauche" title="Aide:Ébauche">ébauche</a> concernant un <a href="/wiki/Logiciel_libre" title="Logiciel libre">logiciel libre</a>.</strong>
+<p>Vous pouvez partager vos connaissances en l’améliorant (<b><a href="/wiki/Aide:Comment_modifier_une_page" title="Aide:Comment modifier une page">comment&#160;?</a></b>) selon les recommandations des <a href="/wiki/Projet:Accueil" title="Projet:Accueil">projets correspondants</a>.
+</p>
+</div></div>
+<p class="mw-empty-elt">
+</p>
+<div class="infobox_v3">
+<div class="entete icon informatique" style="background-color: #; color: #000000;"><style data-mw-deduplicate="TemplateStyles:r151815299">.mw-parser-output .entete.informatique{background-image:url("//upload.wikimedia.org/wikipedia/commons/a/ae/Picto-infoboxinfo.png")}</style>
+<div>youtube-dl</div>
+</div>
+<p class="mw-empty-elt">
+
+</p>
+<div class="images"><a href="/wiki/Fichier:-youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png" class="image"><img alt="Description de l&#39;image -youtube-dl https www.youtube.com watch v=YE7VzlLtp-4.png." src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/-youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png/220px--youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png" decoding="async" width="220" height="46" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/-youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png/330px--youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fb/-youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png/440px--youtube-dl_https_www.youtube.com_watch_v%3DYE7VzlLtp-4.png 2x" data-file-width="663" data-file-height="140" /></a> 
+</div>
+<table><caption style="background:#;color:#000000;">Informations</caption>
+
+<tbody><tr>
+<th scope="row">Créateur</th>
+<td>
+<span class="wd_p170">Ricardo García <small>(<a href="https://www.wikidata.org/wiki/Q95941594" class="extiw" title="d:Q95941594"><span class="indicateur-langue" title="Voir l&#39;élément Wikidata correspondant">d</span></a>)</small><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P170" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+
+
+<tr>
+<th scope="row"> Première version
+ </th>
+<td>
+<span class="wd_p571"><time class="nowrap" datetime="2006-08-08" data-sort-value="2006-08-08">8 août 2006</time><sup id="cite_ref-wikidata-aff7994a0cb4119a1af4fe5f46380c4c3df9cbb5_1-0" class="reference"><a href="#cite_note-wikidata-aff7994a0cb4119a1af4fe5f46380c4c3df9cbb5-1"><span class="cite_crochet">[</span>1<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-wikidata-69c764c9387e17b844cd069d6fa35ef6e7a811ff_2-0" class="reference"><a href="#cite_note-wikidata-69c764c9387e17b844cd069d6fa35ef6e7a811ff-2"><span class="cite_crochet">[</span>2<span class="cite_crochet">]</span></a></sup><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P571" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+<tr>
+<th scope="row"> <a href="/wiki/Version_d%27un_logiciel" title="Version d&#39;un logiciel">Dernière version</a>
+ </th>
+<td>
+<span class="wd_p348">2021.06.06 (<time class="nowrap" datetime="2021-06-06" data-sort-value="2021-06-06">6 juin 2021</time>)<sup id="cite_ref-wikidata-a7130cad76226f07e363f87963cefebdd5083502_3-0" class="reference"><a href="#cite_note-wikidata-a7130cad76226f07e363f87963cefebdd5083502-3"><span class="cite_crochet">[</span>3<span class="cite_crochet">]</span></a></sup><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P348" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+<tr>
+<th scope="row"><a href="/wiki/D%C3%A9p%C3%B4t_(informatique)" title="Dépôt (informatique)">Dépôt</a></th>
+<td>
+<span class="wd_p1324"><a rel="nofollow" class="external text" href="https://github.com/ytdl-org/youtube-dl">github.com/ytdl-org/youtube-dl</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P1324" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+
+
+<tr>
+<th scope="row"> <a href="/wiki/Langage_de_programmation" title="Langage de programmation">Écrit en</a>
+ </th>
+<td>
+<span class="wd_p277"><a href="/wiki/Python_(langage)" title="Python (langage)">Python</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P277" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+
+
+<tr>
+<th scope="row"><a href="/wiki/Syst%C3%A8me_d%27exploitation" title="Système d&#39;exploitation">Système d'exploitation</a></th>
+<td>
+<span class="wd_p306"><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="/wiki/MacOS" title="MacOS">macOS</a>, <a href="/wiki/GNU/Linux" class="mw-redirect" title="GNU/Linux">GNU/Linux</a>, BSD <small>(<a href="https://www.wikidata.org/wiki/Q58636917" class="extiw" title="d:Q58636917"><span class="indicateur-langue" title="Voir l&#39;élément Wikidata correspondant">d</span></a>)</small> et <a href="/wiki/Type_Unix" title="Type Unix">type Unix</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P306" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<th scope="row"> Type
+ </th>
+<td>
+<span class="wd_p31"><a href="/wiki/Gestionnaire_de_t%C3%A9l%C3%A9chargement" title="Gestionnaire de téléchargement">Gestionnaire de téléchargement</a><br />Application console <small>(<a href="https://en.wikipedia.org/wiki/Console_application" class="extiw" title="en:Console application"><span class="indicateur-langue" title="Article sur Wikipédia en anglais">en</span></a>)</small><br />Logiciel du domaine public <small>(<a href="https://en.wikipedia.org/wiki/Public-domain_software" class="extiw" title="en:Public-domain software"><span class="indicateur-langue" title="Article sur Wikipédia en anglais">en</span></a>)</small><br />Bibliothèque logicielle Python <small>(<a href="https://www.wikidata.org/wiki/Q29642950" class="extiw" title="d:Q29642950"><span class="indicateur-langue" title="Voir l&#39;élément Wikidata correspondant">d</span></a>)</small><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P31" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+
+
+<tr>
+<th scope="row"><a href="/wiki/Licence_de_logiciel" title="Licence de logiciel">Licence</a></th>
+<td>
+<span class="wd_p275">Unlicense <small>(<a href="https://en.wikipedia.org/wiki/Unlicense" class="extiw" title="en:Unlicense"><span class="indicateur-langue" title="Article sur Wikipédia en anglais">en</span></a>)</small><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P275" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+<tr>
+<th scope="row"><a href="/wiki/Documentation_logicielle" title="Documentation logicielle">Documentation</a></th>
+<td>
+<span class="wd_p2078"><a rel="nofollow" class="external text" href="http://ytdl-org.github.io/youtube-dl/documentation.html">ytdl-org.github.io/youtube-dl/documentation.html</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P2078" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+<tr>
+<th scope="row"><a href="/wiki/Site_web" title="Site web">Site web</a></th>
+<td>
+<span class="wd_p856"><a rel="nofollow" class="external text" href="https://yt-dl.org/">yt-dl.org</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P856" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></td>
+</tr>
+
+</tbody></table>
+<p class="mw-empty-elt">
+
+</p>
+<p class="navbar bordered noprint" style="border-color:#;"><span class="plainlinks"><a class="external text" href="https://fr.wikipedia.org/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=0">modifier</a> - <a class="external text" href="https://fr.wikipedia.org/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=0">modifier le code</a> - <a href="https://www.wikidata.org/wiki/Special:ItemByTitle/frwiki/Youtube-dl" class="extiw" title="d:Special:ItemByTitle/frwiki/Youtube-dl">voir Wikidata</a> <a href="/wiki/Aide:Infobox_Wikidata" title="Aide:Infobox Wikidata">(aide)</a></span> <a href="/wiki/Mod%C3%A8le:Infobox_Logiciel" title="Consultez la documentation du modèle"><img alt="Consultez la documentation du modèle" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gtk-dialog-info.svg/12px-Gtk-dialog-info.svg.png" decoding="async" width="12" height="12" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gtk-dialog-info.svg/18px-Gtk-dialog-info.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gtk-dialog-info.svg/24px-Gtk-dialog-info.svg.png 2x" data-file-width="60" data-file-height="60" /></a></p></div>
+<p><b>youtube-dl</b> est un <a href="/wiki/Gestionnaire_de_t%C3%A9l%C3%A9chargement" title="Gestionnaire de téléchargement">gestionnaire de téléchargement</a> vidéo et audio de <a href="/wiki/YouTube" title="YouTube">YouTube</a> et d’autres plateformes d’<a href="/wiki/H%C3%A9bergement_de_vid%C3%A9o" class="mw-redirect" title="Hébergement de vidéo">hébergement de vidéos</a>. Il est publié sous <a href="/wiki/Licence_logicielle" class="mw-redirect" title="Licence logicielle">licence logicielle</a> <a href="/w/index.php?title=Unlicense&amp;action=edit&amp;redlink=1" class="new" title="Unlicense (page inexistante)">Unlicense</a>&#160;<a href="https://en.wikipedia.org/wiki/Unlicense" class="extiw" title="en:Unlicense"><span class="indicateur-langue" title="Équivalent de l’article «&#160;Unlicense&#160;» en anglais">(en)</span></a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="fr" dir="ltr"><h2 id="mw-toc-heading">Sommaire</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Histoire"><span class="tocnumber">1</span> <span class="toctext">Histoire</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Demande_de_l’arrêt_du_dépôt_GitHub_par_la_RIAA"><span class="tocnumber">1.1</span> <span class="toctext">Demande de l’arrêt du dépôt GitHub par la RIAA</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Références"><span class="tocnumber">2</span> <span class="toctext">Références</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Annexes"><span class="tocnumber">3</span> <span class="toctext">Annexes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Articles_connexes"><span class="tocnumber">3.1</span> <span class="toctext">Articles connexes</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Liens_externes"><span class="tocnumber">3.2</span> <span class="toctext">Liens externes</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Histoire">Histoire</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=1" class="mw-editsection-visualeditor" title="Modifier la section : Histoire">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=1" title="Modifier la section : Histoire">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="bandeau-container bandeau-section metadata bandeau-niveau-information"><div class="bandeau-cell bandeau-icone-css incomplet">Cette section est vide, insuffisamment détaillée ou incomplète. <a href="/wiki/Sp%C3%A9cial:EditPage/Youtube-dl" title="Spécial:EditPage/Youtube-dl">Votre aide</a> est la bienvenue&#160;! <a href="/wiki/Aide:Comment_modifier_une_page" title="Aide:Comment modifier une page">Comment faire&#160;?</a></div></div>
+<h3><span id="Demande_de_l.E2.80.99arr.C3.AAt_du_d.C3.A9p.C3.B4t_GitHub_par_la_RIAA"></span><span class="mw-headline" id="Demande_de_l’arrêt_du_dépôt_GitHub_par_la_RIAA">Demande de l’arrêt du dépôt GitHub par la RIAA</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Modifier la section : Demande de l’arrêt du dépôt GitHub par la RIAA">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=2" title="Modifier la section : Demande de l’arrêt du dépôt GitHub par la RIAA">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="bandeau-container bandeau-section metadata bandeau-niveau-information"><div class="bandeau-cell bandeau-icone-css incomplet">Cette section est vide, insuffisamment détaillée ou incomplète. <a href="/wiki/Sp%C3%A9cial:EditPage/Youtube-dl" title="Spécial:EditPage/Youtube-dl">Votre aide</a> est la bienvenue&#160;! <a href="/wiki/Aide:Comment_modifier_une_page" title="Aide:Comment modifier une page">Comment faire&#160;?</a></div></div>
+<p>En <time class="nowrap date-lien" datetime="2020-10" data-sort-value="2020-10"><a href="/wiki/Octobre_2020" title="Octobre 2020">octobre</a> <a href="/wiki/2020" title="2020">2020</a></time>, le dépôt de <i>youtube-dl</i> et tous ses forks sont clôturés de GitHub, un logiciel permettant de conserver en local une copie d'une vidéo disponible sur un certains nombres de sites de diffusion vidéo. D'après le site, c'est en raison de la loi américaine du <a href="/wiki/Digital_Millennium_Copyright_Act" title="Digital Millennium Copyright Act">Digital Millennium Copyright Act</a> (DMCA) de 1998 et à la demande du <a href="/wiki/Recording_Industry_Association_of_America" title="Recording Industry Association of America">Recording Industry Association of America</a> (RIAA), représentant les industriels de la musique. Le logiciel est toujours disponible sur le site des développeurs, mais pour la <a href="/wiki/Freedom_of_the_Press_Foundation" title="Freedom of the Press Foundation">Freedom of the Press Foundation</a>, cela pose une menace sur ce logiciel et sur le travail des <a href="/wiki/Journaliste" title="Journaliste">journalistes</a> qui l'utilisent fréquemment pour conserver une trace de vidéos pour leurs <a href="/wiki/Journalisme_d%27enqu%C3%AAte" title="Journalisme d&#39;enquête">enquêtes</a> et <a href="/wiki/Reportage" title="Reportage">reportages</a>, notamment pour les contenus concernant les <a href="/wiki/Extr%C3%AAmisme" class="mw-redirect" title="Extrêmisme">extrêmistes</a> ou les controverses<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite_crochet">[</span>4<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite_crochet">[</span>5<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite_crochet">[</span>6<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite_crochet">[</span>7<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite_crochet">[</span>8<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite_crochet">[</span>9<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite_crochet">[</span>10<span class="cite_crochet">]</span></a></sup><sup class="reference cite_virgule">,</sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite_crochet">[</span>11<span class="cite_crochet">]</span></a></sup>.
+</p>
+<h2><span id="R.C3.A9f.C3.A9rences"></span><span class="mw-headline" id="Références">Références</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=3" class="mw-editsection-visualeditor" title="Modifier la section : Références">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=3" title="Modifier la section : Références">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="references-small decimal" style=""><div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-wikidata-aff7994a0cb4119a1af4fe5f46380c4c3df9cbb5-1"><span class="mw-cite-backlink noprint"><a href="#cite_ref-wikidata-aff7994a0cb4119a1af4fe5f46380c4c3df9cbb5_1-0">↑</a> </span><span class="reference-text"><span class="ouvrage" id="class_=_&quot;indicateur-langue&quot;_title_=_&quot;Voir_l&#39;élément_Wikidata_correspondant&quot;&gt;d"><span class="ouvrage" id="d">Ricardo García <small>(<a href="https://www.wikidata.org/wiki/Q95941594" class="extiw" title="d:Q95941594"><span class="indicateur-langue" title="Voir l&#39;élément Wikidata correspondant">d</span></a>)</small>, <a rel="nofollow" class="external text" href="https://rg3.name/200807240952.html">«&#160;<cite style="font-style:normal;"><span class="lang-en" lang="en">youtube-dl is dead, long life to... youtube-dl</span></cite>&#160;»</a>, <time class="nowrap" datetime="2008-07-24" data-sort-value="2008-07-24">24 juillet 2008</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2020-05-31" data-sort-value="2020-05-31">31 mai 2020</time>)</small></span></span>&#160;: <span class="citation">«&#160;<span class="lang-en" lang="en">it’s been almost two years since the first version was released to the public</span>&#160;»</span></span>
+</li>
+<li id="cite_note-wikidata-69c764c9387e17b844cd069d6fa35ef6e7a811ff-2"><span class="mw-cite-backlink noprint"><a href="#cite_ref-wikidata-69c764c9387e17b844cd069d6fa35ef6e7a811ff_2-0">↑</a> </span><span class="reference-text"><span class="ouvrage" id="class_=_&quot;indicateur-langue&quot;_title_=_&quot;Voir_l&#39;élément_Wikidata_correspondant&quot;&gt;d"><span class="ouvrage" id="d">Ricardo García <small>(<a href="https://www.wikidata.org/wiki/Q95941594" class="extiw" title="d:Q95941594"><span class="indicateur-langue" title="Voir l&#39;élément Wikidata correspondant">d</span></a>)</small>, <a rel="nofollow" class="external text" href="https://rg3.name/202011071352.html">«&#160;<cite style="font-style:normal;"><span class="lang-en" lang="en">Origins of the youtube-dl project</span></cite>&#160;»</a>, <time class="nowrap" datetime="2020-11-07" data-sort-value="2020-11-07">7 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2020-11-11" data-sort-value="2020-11-11">11 novembre 2020</time>)</small></span></span></span>
+</li>
+<li id="cite_note-wikidata-a7130cad76226f07e363f87963cefebdd5083502-3"><span class="mw-cite-backlink noprint"><a href="#cite_ref-wikidata-a7130cad76226f07e363f87963cefebdd5083502_3-0">↑</a> </span><span class="reference-text"><span class="ouvrage"><a rel="nofollow" class="external text" href="https://github.com/ytdl-org/youtube-dl/releases/tag/2021.06.06">«&#160;<cite style="font-style:normal;"><span class="lang-en" lang="en">Release youtube-dl 2021.06.06</span></cite>&#160;»</a></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink noprint"><a href="#cite_ref-4">↑</a> </span><span class="reference-text"><span class="ouvrage" id="Higgins"><span class="ouvrage" id="Parker_Higgins"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Parker Higgins, <span lang="en"><a rel="nofollow" class="external text" href="https://freedom.press/news/riaa-github-youtube-dl-journalist-tool/">«&#160;<cite style="font-style:normal;">Music industry forces widely used journalist tool offline</cite>&#160;»</a></span>, sur <span class="italique">Freedom.press</span>, <time class="nowrap" datetime="2020-10-26" data-sort-value="2020-10-26">26 octobre 2020</time></span></span>.</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink noprint"><a href="#cite_ref-5">↑</a> </span><span class="reference-text"><span class="ouvrage" id="2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> <span lang="en"><a rel="nofollow" class="external text" href="https://www.eff.org/document/eff-letter-github-youtube-dl-takedown">«&#160;<cite style="font-style:normal;">EFF letter to GitHub on youtube-dl Takedown</cite>&#160;»</a></span>, sur <span class="italique"><a href="/wiki/EFF" class="mw-redirect" title="EFF">EFF</a></span>, <time class="nowrap" datetime="2020-11-15" data-sort-value="2020-11-15">15 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink noprint"><a href="#cite_ref-6">↑</a> </span><span class="reference-text"><span class="ouvrage" id="2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> <span lang="en"><a rel="nofollow" class="external text" href="https://www.eff.org/deeplinks/2020/11/github-reinstates-youtube-dl-after-riaas-abuse-dmca">«&#160;<cite style="font-style:normal;">GitHub Reinstates youtube-dl After RIAA’s Abuse of the DMCA</cite>&#160;»</a></span>, sur <span class="italique"><a href="/wiki/EFF" class="mw-redirect" title="EFF">EFF</a></span>, <time class="nowrap" datetime="2020-11-17" data-sort-value="2020-11-17">17 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink noprint"><a href="#cite_ref-7">↑</a> </span><span class="reference-text"><span class="ouvrage" id="Coldewey2020"><span class="ouvrage" id="Devin_Coldewey2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Devin Coldewey, <span lang="en"><a rel="nofollow" class="external text" href="https://techcrunch.com/2020/11/16/github-defies-riaa-takedown-notice-restoring-youtube-dl-and-starting-1m-defense-fund/">«&#160;<cite style="font-style:normal;">GitHub defies RIAA takedown notice, restoring YouTube-dl and starting $1M defense fund</cite>&#160;»</a></span>, sur <span class="italique"><a href="/wiki/TechCrunch" title="TechCrunch">TechCrunch</a></span>, <time class="nowrap" datetime="2020-11-16" data-sort-value="2020-11-16">16 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink noprint"><a href="#cite_ref-8">↑</a> </span><span class="reference-text"><span class="ouvrage" id="Gatlan2020"><span class="ouvrage" id="Sergiu_Gatlan2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Sergiu Gatlan, <span lang="en"><a rel="nofollow" class="external text" href="https://www.bleepingcomputer.com/news/software/angry-youtube-dl-users-flood-github-with-new-repos-after-takedown/">«&#160;<cite style="font-style:normal;">Angry YouTube-dl users flood GitHub with new repos after takedown</cite>&#160;»</a></span>, sur <span class="italique"><a href="/w/index.php?title=Bleeping_Computer&amp;action=edit&amp;redlink=1" class="new" title="Bleeping Computer (page inexistante)">Bleeping Computer</a>&#160;<a href="https://en.wikipedia.org/wiki/Bleeping_Computer" class="extiw" title="en:Bleeping Computer"><span class="indicateur-langue" title="Équivalent de l’article «&#160;Bleeping Computer&#160;» en anglais">(en)</span></a></span>, <time class="nowrap" datetime="2020-10-26" data-sort-value="2020-10-26">26 octobre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink noprint"><a href="#cite_ref-9">↑</a> </span><span class="reference-text"><span class="ouvrage" id="King2020"><span class="ouvrage" id="Ashley_King2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Ashley King, <span lang="en"><a rel="nofollow" class="external text" href="https://www.digitalmusicnews.com/2020/11/17/youtube-dl-returns-to-github/">«&#160;<cite style="font-style:normal;">YouTube-DL Is Officially Back on GitHub After Open-Source Backlash</cite>&#160;»</a></span>, sur <span class="italique">Digital Music News</span>, <time class="nowrap" datetime="2020-11-17" data-sort-value="2020-11-17">17 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink noprint"><a href="#cite_ref-10">↑</a> </span><span class="reference-text"><span class="ouvrage" id="Van_der_Sar2020"><span class="ouvrage" id="Ernesto_Van_der_Sar2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Ernesto Van der Sar, <span lang="en"><a rel="nofollow" class="external text" href="https://torrentfreak.com/github-reinstates-youtube-dl-and-puts-1m-in-takedown-defense-fund-201116/">«&#160;<cite style="font-style:normal;">GitHub Reinstates Youtube-DL and Puts $1M in Takedown Defense Fund</cite>&#160;»</a></span>, sur <span class="italique"><a href="/wiki/TorrentFreak" title="TorrentFreak">TorrentFreak</a></span>, <time class="nowrap" datetime="2020-11-16" data-sort-value="2020-11-16">16 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink noprint"><a href="#cite_ref-11">↑</a> </span><span class="reference-text"><span class="ouvrage" id="Cole2020"><span class="ouvrage" id="Samantha_Cole2020"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr> Samantha Cole, <span lang="en"><a rel="nofollow" class="external text" href="https://www.vice.com/en/article/7k9b4q/youtube-dl-is-back-on-github">«&#160;<cite style="font-style:normal;">Youtube-dl is Back on Github: 'Our Priority Is Supporting Open Source'</cite>&#160;»</a></span>, sur <span class="italique"><a href="/wiki/Vice_(magazine)" title="Vice (magazine)">Vice</a></span>, <time class="nowrap" datetime="2020-11-16" data-sort-value="2020-11-16">16 novembre 2020</time> <small style="line-height:1em;">(consulté le <time class="nowrap" datetime="2021-06-30" data-sort-value="2021-06-30">30 juin 2021</time>)</small></span></span></span>
+</li>
+</ol></div>
+</div>
+<h2><span class="mw-headline" id="Annexes">Annexes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=4" class="mw-editsection-visualeditor" title="Modifier la section : Annexes">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=4" title="Modifier la section : Annexes">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Articles_connexes">Articles connexes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=5" class="mw-editsection-visualeditor" title="Modifier la section : Articles connexes">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=5" title="Modifier la section : Articles connexes">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="/wiki/Gestionnaire_de_t%C3%A9l%C3%A9chargement" title="Gestionnaire de téléchargement">Gestionnaire de téléchargement</a></li></ul>
+<h3><span class="mw-headline" id="Liens_externes">Liens externes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Youtube-dl&amp;veaction=edit&amp;section=6" class="mw-editsection-visualeditor" title="Modifier la section : Liens externes">modifier</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Youtube-dl&amp;action=edit&amp;section=6" title="Modifier la section : Liens externes">modifier le code</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><cite class="ouvrage" id="site_officiel" style="font-style: normal;"><span class="wd_p856"><abbr class="abbr indicateur-langue" title="Langue : anglais">(en)</abbr>&#160;<a rel="nofollow" class="external text" href="https://yt-dl.org/">Site officiel</a><span class="noprint wikidata-linkback"><a href="https://www.wikidata.org/wiki/Q28401317?uselang=fr#P856" title="Voir et modifier les données sur Wikidata"><img alt="Voir et modifier les données sur Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/10px-Blue_pencil.svg.png" decoding="async" width="10" height="10" style="vertical-align: baseline" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/15px-Blue_pencil.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_pencil.svg/20px-Blue_pencil.svg.png 2x" data-file-width="600" data-file-height="600" /></a></span></span></cite></li></ul>
+<ul id="bandeau-portail" class="bandeau-portail"><li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><a href="/wiki/Portail:Logiciels_libres" title="Portail des logiciels libres"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/24px-Nuvola_apps_emacs.png" decoding="async" width="24" height="24" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/36px-Nuvola_apps_emacs.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/48px-Nuvola_apps_emacs.png 2x" data-file-width="128" data-file-height="128" /></a></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Logiciels_libres" title="Portail:Logiciels libres">Portail des logiciels libres</a></span> </span></li> <li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><a href="/wiki/Portail:Internet" title="Portail d’Internet"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Circle-icons-email.svg/24px-Circle-icons-email.svg.png" decoding="async" width="24" height="24" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Circle-icons-email.svg/36px-Circle-icons-email.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Circle-icons-email.svg/48px-Circle-icons-email.svg.png 2x" data-file-width="512" data-file-height="512" /></a></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Internet" title="Portail:Internet">Portail d’Internet</a></span> </span></li> <li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><a href="/wiki/Portail:Informatique" title="Portail de l’informatique"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/24px-Circle-icons-computer.svg.png" decoding="async" width="24" height="24" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/36px-Circle-icons-computer.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/48px-Circle-icons-computer.svg.png 2x" data-file-width="512" data-file-height="512" /></a></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Informatique" title="Portail:Informatique">Portail de l’informatique</a></span> </span></li>                  </ul>
+<!-- 
+NewPP limit report
+Parsed by mw2369
+Cached time: 20210907053858
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.959 seconds
+Real time usage: 1.160 seconds
+Preprocessor visited node count: 3591/1000000
+Post‐expand include size: 84321/2097152 bytes
+Template argument size: 14453/2097152 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 4/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 12364/5000000 bytes
+Lua time usage: 0.714/10.000 seconds
+Lua memory usage: 22156011/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1101.411      1 -total
+ 60.70%  668.574     43 Modèle:Wikidata
+ 51.94%  572.118      1 Modèle:Infobox_Logiciel
+ 39.98%  440.393     23 Modèle:Infobox_V3/Tableau_Ligne_mixte
+ 29.31%  322.775      1 Modèle:Ébauche
+  9.13%  100.551     13 Modèle:Infobox_V3/Tableau_Ligne_mixte_Wikidata
+  8.50%   93.567      1 Modèle:Portail
+  4.89%   53.878      2 Modèle:Infobox_V3/Image_Wikidata
+  4.61%   50.748      2 Modèle:Infobox_V3/Image
+  4.36%   48.020      1 Modèle:Références
+-->
+
+<!-- Saved in parser cache with key frwiki:pcache:idhash:14219255-0!canonical and timestamp 20210907053857 and revision id 184377142. Serialized with JSON.
+ -->
+</div><noscript><img src="//fr.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Ce document provient de «&#160;<a dir="ltr" href="https://fr.wikipedia.org/w/index.php?title=Youtube-dl&amp;oldid=184377142">https://fr.wikipedia.org/w/index.php?title=Youtube-dl&amp;oldid=184377142</a>&#160;».</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Cat%C3%A9gorie:Accueil" title="Catégorie:Accueil">Catégories</a> : <ul><li><a href="/wiki/Cat%C3%A9gorie:YouTube" title="Catégorie:YouTube">YouTube</a></li><li><a href="/wiki/Cat%C3%A9gorie:Gestionnaire_de_t%C3%A9l%C3%A9chargement" title="Catégorie:Gestionnaire de téléchargement">Gestionnaire de téléchargement</a></li><li><a href="/wiki/Cat%C3%A9gorie:Logiciel_libre" title="Catégorie:Logiciel libre">Logiciel libre</a></li><li><a href="/wiki/Cat%C3%A9gorie:Logiciel_pour_Unix" title="Catégorie:Logiciel pour Unix">Logiciel pour Unix</a></li><li><a href="/wiki/Cat%C3%A9gorie:Logiciel_pour_Windows" title="Catégorie:Logiciel pour Windows">Logiciel pour Windows</a></li><li><a href="/wiki/Cat%C3%A9gorie:Logiciel_%C3%A9crit_en_Python" title="Catégorie:Logiciel écrit en Python">Logiciel écrit en Python</a></li><li><a href="/wiki/Cat%C3%A9gorie:Produit_lanc%C3%A9_en_2006" title="Catégorie:Produit lancé en 2006">Produit lancé en 2006</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Catégories cachées : <ul><li><a href="/wiki/Cat%C3%A9gorie:Article_contenant_un_appel_%C3%A0_traduction_en_anglais" title="Catégorie:Article contenant un appel à traduction en anglais">Article contenant un appel à traduction en anglais</a></li><li><a href="/wiki/Cat%C3%A9gorie:Wikip%C3%A9dia:%C3%A9bauche_logiciel_libre" title="Catégorie:Wikipédia:ébauche logiciel libre">Wikipédia:ébauche logiciel libre</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P170" title="Catégorie:Page utilisant P170">Page utilisant P170</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P571" title="Catégorie:Page utilisant P571">Page utilisant P571</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P348" title="Catégorie:Page utilisant P348">Page utilisant P348</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P1324" title="Catégorie:Page utilisant P1324">Page utilisant P1324</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P277" title="Catégorie:Page utilisant P277">Page utilisant P277</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P306" title="Catégorie:Page utilisant P306">Page utilisant P306</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P31" title="Catégorie:Page utilisant P31">Page utilisant P31</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P275" title="Catégorie:Page utilisant P275">Page utilisant P275</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P2078" title="Catégorie:Page utilisant P2078">Page utilisant P2078</a></li><li><a href="/wiki/Cat%C3%A9gorie:Page_utilisant_P856" title="Catégorie:Page utilisant P856">Page utilisant P856</a></li><li><a href="/wiki/Cat%C3%A9gorie:Article_utilisant_une_Infobox" title="Catégorie:Article utilisant une Infobox">Article utilisant une Infobox</a></li><li><a href="/wiki/Cat%C3%A9gorie:Article_avec_une_section_vide_ou_incompl%C3%A8te" title="Catégorie:Article avec une section vide ou incomplète">Article avec une section vide ou incomplète</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Logiciels_libres/Articles_li%C3%A9s" title="Catégorie:Portail:Logiciels libres/Articles liés">Portail:Logiciels libres/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Logiciel/Articles_li%C3%A9s" title="Catégorie:Portail:Logiciel/Articles liés">Portail:Logiciel/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Informatique/Articles_li%C3%A9s" title="Catégorie:Portail:Informatique/Articles liés">Portail:Informatique/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Internet/Articles_li%C3%A9s" title="Catégorie:Portail:Internet/Articles liés">Portail:Internet/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:M%C3%A9dias/Articles_li%C3%A9s" title="Catégorie:Portail:Médias/Articles liés">Portail:Médias/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Technologies/Articles_li%C3%A9s" title="Catégorie:Portail:Technologies/Articles liés">Portail:Technologies/Articles liés</a></li><li><a href="/wiki/Cat%C3%A9gorie:Portail:Sciences/Articles_li%C3%A9s" title="Catégorie:Portail:Sciences/Articles liés">Portail:Sciences/Articles liés</a></li></ul></div></div>
+	</div>
+
+
+</main>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+	</div> 
+</div> 
+
+<div class="mw-workspace-container mw-footer-container">
+	<div class="mw-content-container">
+		<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> La dernière modification de cette page a été faite le 5 juillet 2021 à 10:04.</li>
+	<li id="footer-info-copyright"><span style="white-space: normal"><a class="internal" href="/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia" title="Droit d'auteur">Droit d'auteur</a> : les textes sont disponibles sous <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr" title="Licence Creative Commons Attribution - partage dans les mêmes conditions 3.0 non transposé">licence Creative Commons attribution, partage dans les mêmes conditions</a> ; d’autres conditions peuvent s’appliquer. Voyez les <a href="https://wikimediafoundation.org/wiki/Conditions_d%27utilisation" title="Conditions d’utilisation de la Wikimedia Foundation">conditions d’utilisation</a> pour plus de détails, ainsi que les <a class="internal" href="/wiki/Wikip%C3%A9dia:Cr%C3%A9dits_graphiques" title="Droit d'auteur de certaines icônes">crédits graphiques</a>. En cas de réutilisation des textes de cette page, voyez <a class="internal" href="/wiki/Sp%C3%A9cial:Citer/Youtube-dl" title="Citer ou réutiliser cette page">comment citer les auteurs et mentionner la licence</a>.<br />
+Wikipedia® est une marque déposée de la <a href="https://wikimediafoundation.org/" title="Wikimedia Foundation">Wikimedia Foundation, Inc.</a>, organisation de bienfaisance régie par le paragraphe <a class="internal" href="/wiki/501c" title="501c">501(c)(3)</a> du code fiscal des États-Unis.</span><br /></li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/fr" class="extiw" title="m:Privacy policy/fr">Politique de confidentialité</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikip%C3%A9dia:%C3%80_propos_de_Wikip%C3%A9dia" title="Wikipédia:À propos de Wikipédia">À propos de Wikipédia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikip%C3%A9dia:Avertissements_g%C3%A9n%C3%A9raux" title="Wikipédia:Avertissements généraux">Avertissements</a></li>
+	<li id="footer-places-contact"><a href="//fr.wikipedia.org/wiki/Wikipédia:Contact">Contact</a></li>
+	<li id="footer-places-mobileview"><a href="//fr.m.wikipedia.org/w/index.php?title=Youtube-dl&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Version mobile</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Développeurs</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/fr.wikipedia.org">Statistiques</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Déclaration sur les témoins (cookies)</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+	</div>
+</div>
+	</div> 
+</div> 
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.959","walltime":"1.160","ppvisitednodes":{"value":3591,"limit":1000000},"postexpandincludesize":{"value":84321,"limit":2097152},"templateargumentsize":{"value":14453,"limit":2097152},"expansiondepth":{"value":19,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":12364,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00% 1101.411      1 -total"," 60.70%  668.574     43 Modèle:Wikidata"," 51.94%  572.118      1 Modèle:Infobox_Logiciel"," 39.98%  440.393     23 Modèle:Infobox_V3/Tableau_Ligne_mixte"," 29.31%  322.775      1 Modèle:Ébauche","  9.13%  100.551     13 Modèle:Infobox_V3/Tableau_Ligne_mixte_Wikidata","  8.50%   93.567      1 Modèle:Portail","  4.89%   53.878      2 Modèle:Infobox_V3/Image_Wikidata","  4.61%   50.748      2 Modèle:Infobox_V3/Image","  4.36%   48.020      1 Modèle:Références"]},"scribunto":{"limitreport-timeusage":{"value":"0.714","limit":"10.000"},"limitreport-memusage":{"value":22156011,"limit":52428800}},"cachereport":{"origin":"mw2369","timestamp":"20210907053858","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Youtube-dl","url":"https:\/\/fr.wikipedia.org\/wiki\/Youtube-dl","sameAs":"http:\/\/www.wikidata.org\/entity\/Q28401317","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q28401317","author":{"@type":"Organization","name":"Contributeurs aux projets Wikimedia"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2021-06-30T13:56:40Z","dateModified":"2021-07-05T08:04:21Z","headline":"programme en ligne de commande pour t\u00e9l\u00e9charger des vid\u00e9os depuis YouTube ainsi que depuis d'autres sites de vid\u00e9os"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":158,"wgHostname":"mw2270"});});</script>
+</body></html>

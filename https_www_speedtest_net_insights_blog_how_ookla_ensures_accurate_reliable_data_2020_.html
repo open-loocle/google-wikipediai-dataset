@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/insights/blog/assets/css/main.min.css?v=8d0c1f850d" />
+    <link rel="stylesheet" type="text/css" href="/insights/blog/assets/css/font-awesome.min.css?v=8d0c1f850d" />
+
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7800252/7735392/css/fonts.css" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W49T8NZ');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="Learn why consumer-initiated testing is the best measure of internet speed and how Ookla produces the most accurate and reliable data" />
+    <link rel="icon" href="/insights/blog/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2021/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/amp/" />
+    
+    <meta property="og:site_name" content="Speedtest Stories &amp; Analysis: Data-driven articles on internet speeds" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)" />
+    <meta property="og:description" content="Learn why consumer-initiated testing is the best measure of internet speed and how Ookla produces the most accurate and reliable data" />
+    <meta property="og:url" content="https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2021/" />
+    <meta property="og:image" content="https://www.speedtest.net/insights/blog/content/images/2020/04/2020-methodology-thumb-1.png" />
+    <meta property="article:published_time" content="2020-04-28T12:00:00.000Z" />
+    <meta property="article:modified_time" content="2021-05-12T17:06:58.000Z" />
+    <meta property="article:tag" content="Ookla News" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/teamookla" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)" />
+    <meta name="twitter:description" content="Learn why consumer-initiated testing is the best measure of internet speed and how Ookla produces the most accurate and reliable data" />
+    <meta name="twitter:url" content="https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2021/" />
+    <meta name="twitter:image" content="https://www.speedtest.net/insights/blog/content/images/2020/04/2020-methodology-thumb-1.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Brian Connelly" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Ookla News" />
+    <meta name="twitter:site" content="@speedtest" />
+    <meta name="twitter:creator" content="@briandconnelly" />
+    <meta property="og:image:width" content="840" />
+    <meta property="og:image:height" content="500" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Speedtest Stories &amp; Analysis: Data-driven articles on internet speeds",
+        "url": "https://www.speedtest.net/insights/blog/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.speedtest.net/insights/blog/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Brian Connelly",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.speedtest.net/insights/blog/content/images/2019/04/author-connelly.png",
+            "width": 167,
+            "height": 235
+        },
+        "url": "https://www.speedtest.net/insights/blog/author/brian-connelly/",
+        "sameAs": [
+            "https://twitter.com/briandconnelly"
+        ]
+    },
+    "headline": "How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)",
+    "url": "https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/",
+    "datePublished": "2020-04-28T12:00:00.000Z",
+    "dateModified": "2021-05-12T17:06:58.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.speedtest.net/insights/blog/content/images/2020/04/2020-methodology-thumb-1.png",
+        "width": 840,
+        "height": 500
+    },
+    "keywords": "Ookla News",
+    "description": "\n\nRead the latest version of this article\n[/insights/blog/how-ookla-ensures-accurate-reliable-data-2021/].\n\nAt Ookla® we care deeply about providing data and analyses that are accurate and\nstatistically sound so that consumers and businesses can trust the information\nthey’re receiving. We’ve been doing this for over 14 years.\n\nSpeedtest®, our flagship product, is the most reliable tool for measuring\ninternet performance and providing network diagnostics. Every day, millions of\npeople use Speedte",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.speedtest.net/insights/blog/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.42" />
+    <link rel="alternate" type="application/rss+xml" title="Speedtest Stories &amp; Analysis: Data-driven articles on internet speeds" href="https://www.speedtest.net/insights/blog/rss/" />
+    <meta property="tags-widget:tags" content="Global Speeds, Improve Your Speeds" />
+<meta property="fb:pages" content="113312902042192" />
+<script>
+  var ghosthunter_key = 'e99e66e5b26678e9998ed25cec';
+  var ghost_root_url = "/insights/blog/ghost/api/v2";
+</script>
+</head>
+<body id="speedtest" class="post-template tag-ookla-news">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W49T8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <style>
+  .svg-sprite {
+    display: none;
+  }
+</style>
+<div class="svg-sprite">
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="logo_speedtest" viewBox="0 0 193 24">
+      <path d="M35.7 19.3l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m23.9-6.1c2.4 0 3.9-1.4 3.9-3.3 0-2.2-1.5-3.3-3.9-3.3h-3.7v6.6h3.7zm-7-9.5h7.2c4.3 0 7 2.4 7 6.1v.1c0 4.1-3.3 6.3-7.3 6.3h-3.6V22h-3.2l-.1-18.3zm17 0h13.6v2.8H72.8v4.8H82v2.9h-9.2v4.9h10.5V22H69.6zm17 0h13.6v2.8H89.8v4.8H99v2.9h-9.2v4.9h10.5V22H86.6zm20.2 2.9v12.5h3.6c3.8 0 6.4-2.6 6.4-6.2v-.1c0-3.6-2.5-6.2-6.4-6.2h-3.6zm-3.2-2.9h6.8c5.8 0 9.7 3.9 9.7 9.1v.1c0 5.2-4 9.2-9.7 9.2h-6.8V3.7zm24.2 2.9H122V3.7h14.9v2.9h-5.8V22h-3.3zm12.5-2.9h13.6v2.8h-10.4v4.8h9.2v2.9h-9.2v4.9H154V22h-13.7zm16.3 15.6l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m22.1-12.7h-5.8V3.7h14.9v2.9H182V22h-3.3zM23 23c2.3-2.3 3.8-5.5 3.8-9.1C26.8 6.8 21 1 13.9 1 6.8 1 1 6.8 1 13.9c0 3.6 1.4 6.8 3.8 9.1l1.8-1.8c-1.9-1.9-3-4.4-3-7.3 0-5.7 4.6-10.3 10.3-10.3 5.7 0 10.3 4.6 10.3 10.3 0 2.8-1.2 5.4-3 7.3L23 23z"/>
+      <path d="M13.5 16.5l-2.2-2.3 7.3-6.4 1.3 1.4zM190.8 5.1c.2 0 .4-.1.4-.3 0-.2-.1-.3-.4-.3h-.5v.6h.5zm-.8-.9h.8c.2 0 .4.1.5.2.1.1.2.2.2.4 0 .3-.2.5-.4.5l.5.7h-.4l-.4-.6h-.4V6h-.4V4.2z"/>
+      <path d="M190.7 3.6c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5m0 .2c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3-.7 0-1.3-.6-1.3-1.3 0-.7.5-1.3 1.3-1.3"/>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="logo_ookla" viewBox="0 0 71 30">
+      <path d="M45.987 22.642L35.044 11.698v1.932l9.012 9.012zM43.238 22.642l-8.194-8.194v1.954l6.24 6.24zM40.442 22.642l-5.398-5.398v1.93l3.468 3.468zM45.75 8.47V6.54l-7.556 7.555.965.965zM48.518 1l-11.71 11.71.965.964L48.518 2.93zM45.745 1L35.42 11.323l.966.965 9.36-9.357zM13.734 15.552c0-3.103-2.103-5.645-5.347-5.645-3.243 0-5.344 2.543-5.344 5.645 0 3.104 2.1 5.647 5.344 5.647 3.245 0 5.347-2.544 5.347-5.648M1 15.552c0-4.204 3.063-7.448 7.387-7.448 4.325 0 7.39 3.243 7.39 7.448S12.71 23 8.386 23 1 19.757 1 15.552M29.358 15.552c0-3.103-2.103-5.645-5.346-5.645s-5.346 2.543-5.346 5.645c0 3.104 2.103 5.647 5.346 5.647 3.244 0 5.346-2.544 5.346-5.648m-12.734 0c0-4.204 3.063-7.448 7.39-7.448 4.324 0 7.387 3.243 7.387 7.448S28.34 23 24.014 23c-4.326 0-7.39-3.243-7.39-7.448M46.592 8.464h1.922v12.374h7.057v1.802h-8.978zM63.14 10.947h-.04L58.333 22.64h-2.16L62.14 8.464h2.082l5.84 14.176h-2.16zM32.437 8.465h1.946v14.177h-1.946zM69.386 8.46c.16 0 .318.042.47.125.155.083.274.2.36.355a.97.97 0 0 1 0 .958.963.963 0 0 1-1.665 0 .963.963 0 0 1 .362-1.313c.156-.082.313-.124.474-.124zm0 .16a.82.82 0 0 0-.394.105.797.797 0 0 0-.3 1.095.805.805 0 0 0 1.093.296.752.752 0 0 0 .295-.295.81.81 0 0 0-.003-.8.74.74 0 0 0-.3-.295.79.79 0 0 0-.39-.104zm-.42 1.332V8.92h.354c.12 0 .21.008.263.028a.268.268 0 0 1 .178.252c0 .075-.027.14-.08.197a.32.32 0 0 1-.215.094.323.323 0 0 1 .088.056c.042.04.093.11.152.205l.126.203h-.203l-.09-.163c-.073-.128-.13-.208-.175-.24-.03-.024-.075-.035-.134-.035h-.098v.438h-.165zm.166-.582h.203c.096 0 .163-.015.197-.043a.142.142 0 0 0 .053-.115c0-.03-.01-.058-.026-.082a.15.15 0 0 0-.07-.053.522.522 0 0 0-.168-.018h-.19v.31z"/>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="ic_account-line" viewBox="0 0 24 24">
+      <path d="M22.27 22.385a.73.73 0 0 1-.733-.727v-.483c0-1.337-.83-2.536-2.062-2.976-1.518-.545-4.037-1.194-7.475-1.194s-5.957.65-7.47 1.19c-1.23.44-2.06 1.638-2.06 2.975v.48a.735.735 0 0 1-1.47.004v-.48c0-1.957 1.22-3.706 3.036-4.355 1.622-.584 4.317-1.277 7.964-1.277s6.34.693 7.964 1.276C21.78 17.47 23 19.22 23 21.174v.48c0 .4-.33.73-.73.73zM12 3.085c2.425 0 4.4 1.975 4.4 4.4s-1.974 4.4-4.4 4.4-4.4-1.973-4.4-4.4 1.975-4.4 4.4-4.4m0-1.468a5.87 5.87 0 0 0 0 11.737 5.87 5.87 0 0 0 0-11.74v.003z"/>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="ic_twitter" viewBox="0 0 16 16">
+      <path d="M16,3a6.62,6.62,0,0,1-1.89.52,3.3,3.3,0,0,0,1.44-1.82,6.59,6.59,0,0,1-2.09.8A3.28,3.28,0,0,0,7.79,4.78a3.36,3.36,0,0,0,.09.75A9.33,9.33,0,0,1,1.11,2.1,3.24,3.24,0,0,0,.67,3.75,3.28,3.28,0,0,0,2.13,6.48,3.28,3.28,0,0,1,.64,6.07v0A3.29,3.29,0,0,0,3.28,9.33a3.33,3.33,0,0,1-1.48.06,3.29,3.29,0,0,0,3.07,2.28,6.59,6.59,0,0,1-4.08,1.4A6.75,6.75,0,0,1,0,13,9.3,9.3,0,0,0,5,14.5a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-0.28,0-0.43A6.67,6.67,0,0,0,16,3h0Z"/>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="ic_facebook" viewBox="0 0 16 16">
+      <path d="M6.55,15V8.8H4.46V6.39H6.55V4.61c0-1.62,1-3.18,2.61-3.18,0.7184,0,1.7321.026,2.35,0.09V3.67H10.23a1.0755,1.0755,0,0,0-1.1859.7065A1.58,1.58,0,0,0,9,4.85V6.39h2.39L11.12,8.8H9V15H6.55Z"/>
+    </svg>
+
+</div>
+
+
+    
+
+    
+<header id="header" class="header header-main header-vh100 header-naked ">
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" aria-label="Speedtest">
+                    <svg class="svg-icon svg-icon-speedtest-logo">
+                        <use xlink:href="#logo_speedtest"></use>
+                    </svg>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/apps">Apps</a></li>
+                    <li><a href="/insights">Insights</a></li>
+                    <li><a href="/speedtest-servers">Network</a></li>
+                    <li><a href="/apps/cli">Developers</a></li>
+                    <li><a href="/enterprise">Enterprise</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/login">
+                        <svg class="svg-icon"><use xlink:href="#ic_account-line"></use></svg>
+                        Log In
+                    </a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="header-subscribe-form-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8">
+                        <div class="header-subscribe-form">
+                            <div class="header-subscribe-copy">
+                                <h2>Subscribe to Insights</h2>
+                                <p>We’ll email you whenever we post something new.</p>
+                            </div>
+                            <script type="text/javascript" src="https://zdstatic.speedtest.net/jst/zdconsent.js" async="true"></script>
+                            <!--[if lte IE 8]>
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                            <![endif]-->
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                            <script type="text/javascript">
+                              function _createForm () {
+                                hbspt.forms.create({
+                                  portalId: '6583452',
+                                  formId: '5a1c0aae-f859-4ce5-9ce1-8700821dd1a8',
+                                  sfdcCampaignId: '7010z000000v86JAAQ',
+                                  inlineMessage: 'Please check your email to confirm subscription.',
+                                  submitButtonClass: "btn btn-primary",
+                                  onFormReady: function () {
+                                    handleFormReady();
+                                  }
+                                });
+                              }
+
+                              window.zdconsent = window.zdconsent || {'cmd': [] };
+                              window.zdconsent.cmd.push(function (window) {
+                                if (document.readyState === 'complete') {
+                                  _createForm();
+                                } else {
+                                  window.addEventListener("load", _createForm);
+                                }
+                              });
+                            </script>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="search-form">
+  <form action="#" class="hbspt-form">
+    <input id="search-field" type="search" placeholder="Search" class="hs-input hs-form-field">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+  <div class="search-results text-left">
+    <a href="#" class="search-results-close">&times;</a>
+    <section id="results"></section>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container user-message" id="js-blocked-message" style="display: none;"></div>
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="https://www.speedtest.net/insights/blog/">Insights Home</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/">How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header-wrap hide-on-menu">
+                    <a href="/insights/blog/tag/ookla-news/" class="header-category">Ookla News</a>
+
+
+
+
+                    <h1>How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)</h1>
+
+                        <span class="post-meta">
+                            <span class="post-meta-author"><i class="fa fa-user"></i><a href="/insights/blog/author/brian-connelly/">Brian Connelly</a></span>
+                            <time class="post-meta-date" datetime="2020-04-28">28 Apr 2020</time>
+                        </span>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="break">
+        <div class="preload-feature-background hide-on-menu">
+            <div class="preload-background-image"></div>
+            <span class="spinner preload-background-spinner">
+                <span class="double-bounce1"></span>
+                <span class="double-bounce2"></span>
+            </span>
+        </div>
+    </div>
+
+
+</header>
+
+<main id="main" class="container container-content hide-on-menu">
+
+
+        <div class="row">
+
+            <section class="posts posts-single">
+
+                <article class="post-content">
+                    <!--kg-card-begin: html--><div class="hidden preload-feature" data-image="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-2020-header-2.png"></div><!--kg-card-end: html--><p></p><!--kg-card-begin: markdown--><p><a href="https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2021/">Read the latest version of this article</a>.</p>
+<p>At Ookla<sup>®</sup> we care deeply about providing data and analyses that are accurate and statistically sound so that consumers and businesses can trust the information they’re receiving. We’ve been doing this for over 14 years.</p>
+<p>Speedtest<sup>®</sup>, our flagship product, is the most reliable tool for measuring internet performance and providing network diagnostics. Every day, millions of people use Speedtest to better understand the performance and quality of their internet connections. <a href="#consumer-initiated">Read more about why consumer-initiated testing is more accurate than other methods</a>.</p>
+<p>Ookla’s Speedtest Server Network™ is comprised of high-performance servers in every country and major population center. <a href="#server-network">Read more about the Speedtest Server Network</a> and how <a href="#measure-5g">Speedtest is uniquely able to measure high-speed connections</a>.</p>
+<p>We subject this vast amount of data to rigorous aggregation and analysis, making Ookla the preferred data provider for telecommunications operators, regulatory bodies, trade bodies, analysts, journalists and nonprofits worldwide. <a href="#aggregation">Read more about how our aggregation methodology sets Speedtest apart</a>.</p>
+<p>This article also shares the details of Ookla’s operational definitions and metrics. <a href="#metrics">Read more about the language we use to describe our analyses</a>.</p>
+<p><a href="https://resources.ookla.com/hubfs/Ookla%20Speedtest%20Methodology%202020.pdf">Download the full-length version of this document here</a>.<br>
+<img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-1-5.png" alt="Methodology-1-5"></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="speedtestisthemostaccuratemeasureofrealworldnetworkperformanceandcoverage">Speedtest is the most accurate measure of real-world network performance and coverage</h2>
+<h3><a id="consumer-initiated">Why consumer-initiated testing is the best measure of internet speed</a></h3> 
+<p>Each time a user takes a Speedtest, a snapshot of the internet is captured for that specific time, place, device and network. Because these tests are initiated by consumers when and where they need performance data, Speedtest gives users accurate information about internet speeds at the times and locations that are important to them. When aggregated, these measurements describe the network’s real-world performance.</p>
+<h4 id="speedtestmeasuresthefullcapacityofaninternetconnection">Speedtest measures the full capacity of an internet connection</h4>
+<p>Each Speedtest runs as a dedicated foreground service. This allows the device to use enough data to flood the internet connection and measure the full capability of both the network connection and the device. Only a dedicated foreground service can accurately assess network performance and quality metrics such as: download speed, upload speed, latency, packet loss, jitter and other indicators of network conditions.</p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-2-1.png" alt="Methodology-2-1"><br>
+Companies that attempt to measure speed using background tests hidden inside of other apps only send small amounts of data back and forth and cannot accurately measure performance, particularly at high speeds.</p>
+<p><strong>Because Speedtest operates in the foreground and measures the full throughput capacity of a connection, we can properly assess the performance capability of even the fastest connection.</strong> This is why speeds measured with Speedtest are often higher than those measured with other methods. This difference can be substantial, especially when testing the performance of newer technologies like 5G and multi-gigabit fiber.</p>
+<aside class="pquote">
+    <blockquote>
+        <p>Consumer-initiated = speed<br>Background = coverage</p>
+    </blockquote>
+</aside>
+<p>Mobile Speedtest users on Android devices can also opt in to submit data from background coverage scans. Our users contribute billions of measurements each day on the quality and conditions of mobile networks in their area from over 300 million scans. These coverage scans provide real-time insights into signal conditions, spectrum usage and network equipment at a fine level of geographic detail.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h4 id="thehiddendownsidesofbackgroundtestingfromotherproviders">The hidden downsides of background testing from other providers</h4>
+<p>Other internet testing solutions run in the background of third-party applications that users are often unaware of, such as messengers, call recorders, dating apps and media converters.</p>
+<p>Due to protections Apple has in place for user privacy, iOS doesn’t surface information like connection type to apps that run in the background. It is vital that a testing solution run in the foreground on iOS to accurately test the network and collect information about the active SIM and access technology. Aggregate speeds you might see from other network testing providers do not adequately represent the results of iOS users, which make up a large and important segment of the market.</p>
+<p>As Google continues to update their data privacy policies for Android, having a dedicated app like Speedtest with a transparent consumer experience and clear user permissions around location data collection is also increasingly important.</p>
+<h4 id="ooklaprovidesareliableconsistenttestexperienceacrossdevices">Ookla provides a reliable, consistent test experience across devices</h4>
+<p>Speedtest provides an accurate, consistent test experience that consumers trust across the many device types available on today’s market. Our rigorous methodology applies to <a href="https://www.speedtest.net/apps/desktop">all of our applications</a>.</p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-3-1.png" alt="Methodology-3-1"></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h3><a id="server-network">How the Speedtest Server Network ensures accuracy</a></h3> 
+<p>Testing to the right server eliminates latency and bottlenecks that can skew performance metrics.</p>
+<p>Each link and node through which data is transferred can affect the final measurements as the link with the most constraining characteristics (highest latency, lowest bandwidth or highest packet loss) will typically limit the final measurements. Therefore, the fewer links between a device and a server, the more relevant the measurement is to quantifying and understanding the networking capability of a particular device.</p>
+<p>Each Speedtest connects to a nearby server in Ookla’s global network of over 10,000 servers in more than 190 countries. This local connection allows us to ensure an accurate view of network performance that isn’t tarnished by external factors. <strong>Ookla takes comprehensive steps to ensure our traffic is indistinguishable from other applications or browser traffic to the server.</strong></p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-4.png" alt="Methodology-4"></p>
+<h4 id="testingtoacdnalonedoesnotprovideanaccuratepictureofnetworkperformance">Testing to a CDN alone does not provide an accurate picture of network performance</h4>
+<p>Although CDNs serve a large portion of internet content, platforms that test to a content delivery network (CDN) only test to a single provider, often in a distant location, which only measures the connection to that specific CDN.</p>
+<p>Speedtest measures the last-mile service provided to the end user by their ISPs and mobile operators. The last mile is the part of a user’s internet experience that a provider has the most control over — and responsibility for. Consumers can more accurately measure and troubleshoot the network connection they’re actually paying for, based on the location from which they are testing, because Speedtest connects to dedicated local servers. This allows us to provide the most accurate quality of service (QoS) measurement possible and uniquely positions us to evaluate the service provided by every ISP and mobile operator in the world — including removing the variability that comes with measuring CDN performance.</p>
+<p>We also recognize the value in measuring a user’s performance beyond the last mile, so Speedtest allows testing to various providers in diverse locations. In this way, users can assess various connection scenarios to understand the full potential of a connection instead of being limited to a single provider. <strong>Only Ookla allows you to detect points of network congestion, and gain a better understanding of internet performance as a whole.</strong></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h3><a id="measure-5g">Speedtest is uniquely capable of measuring the full throughput capacity of 5G and super-fast fiber connections</a></h3>
+<p>Modern network speeds are increasing rapidly with technologies like 4G, 5G and fiber broadband being deployed across the globe. This makes the ability to measure a network’s full capacity more essential than ever. Speedtest uses a client and server testing engine that dynamically scales the number of connections to the server in order to saturate and accurately measure client-side connections up to 10 Gbps. This enables Ookla to overcome the effects of network bottlenecks and measure the full extent of a network’s performance.</p>
+<h4 id="accurate5gconnectiondetectionandidentification">Accurate 5G connection detection and identification</h4>
+<p>Not all 5G-capable devices natively identify the 5G connection type when reporting to applications. That’s why Ookla has directly partnered with device manufacturers worldwide to implement accurate in-app 5G detection in Speedtest. Consumers can reliably see when they’re testing a 5G connection in the Speedtest app, and providers can reliably measure their customers’ 5G network performance and quality.</p>
+<h3 id="testingcoverageavailabilityandqualityofservice">Testing coverage, availability and quality of service</h3>
+<p>Fast speeds only matter on mobile when you actually have coverage. Consumer-initiated testing is the gold standard for speed and other performance metrics, but to measure signal and coverage Speedtest also collects over 300 million daily scans of coverage data in the background, submitted by Speedtest Android app users. These coverage scans capture where service is offered, what the quality of service is at each location, and information about a mobile user’s “radio environment,” including: the technology used (e.g., 5G, 4G LTE, etc.), the cellular infrastructure to which they are connected, and the accompanying strength and quality of signal.</p>
+<p>Combined, consumer-initiated testing and coverage scans provide an unparalleled amount of data on performance and coverage that fully describes the quality of a user’s network connection. Here is an example of that complementary relationship in Brazil:</p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-5.png" alt="Methodology-5"></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h3><a id="aggregation">How Ookla aggregates and analyzes data</a></h3> 
+<h4 id="thelargestvolumeofconsumerinitiatedtests">The largest volume of consumer-initiated tests</h4>
+<p><strong>Numbers matter in data collection, and it’s important to look deeply at what the numbers represent.</strong> If a testing provider were to run 100 background tests per day on 100 phones for 100 days that record 100 values each, they’d have 1 million measurements. That overall number might sound impressive — until you realize that 100 phones do not give you a very wide (or interesting) distribution of phone types, locations or even experiences. The numbers are even less impressive when you realize that the 100 data points they’re collecting include less significant details like the device’s screen width and battery type that are only interesting to tiny cross sections of our industry.</p>
+<p>Each and every day, over 10 million tests are actively initiated by pressing the “Go” button on Speedtest, and we receive additional data from over 300 million coverage scans. We see daily results on almost every mobile and fixed broadband network in the world which provides us with a real-time view of how the internet is performing at a global scale. This constant flow of immense amounts of data allows us to precisely track how networks respond to events like large crowds, the capabilities of new devices, the impact of network upgrades and the rollout of new technologies like 5G.</p>
+<h4 id="unbiaseddataandastatisticalsamplingmethodology">Unbiased data and a statistical sampling methodology</h4>
+<p>We use a rigorous statistical sampling methodology to combat sampling bias and ensure data accuracy. Through consumer-initiated testing, Speedtest gives every user a voice to describe what the internet connection is like on their device at the times and places that matter most to them. Whether a user takes a Speedtest once per month or once per hour, our sampling methodology makes sure that each user’s voice is heard and is not drowned out by high-volume testers.</p>
+<p>When we aggregate data, each unique Speedtest user’s results are averaged to create a single sample that summarizes their internet experience for that time period and geographic area. We then evaluate each service provider based equally on the samples provided by each of its users. This removes the potential for results to be skewed by individual outliers or short-term fluctuations in service or user behaviors.</p>
+<p>To ensure that our results represent the true commercially-available user experience, measurements from some tests are excluded from aggregation and published results, including tests performed in controlled environments by network engineers, tests taken from our CLI tool and results from the following platforms: mobile web tests taken on Speedtest.net, tests on Windows phones and tests using the Chrome app and our embedded solutions. <strong>Our data scientists and analysts employ a host of tools that allow us to identify and remove any tests that could intentionally or unintentionally bias our results.</strong></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2><a id="metrics">Internet performance metrics for mobile and fixed broadband</a></h2>
+<p>For definitions of basic internet measures like download, upload, latency and jitter, visit our <a href="https://www.speedtest.net/about/knowledge/glossary">glossary</a>.</p>
+<p>Ookla uses additional performance metrics to describe real-world internet performance and coverage. Our metrics help consumers to understand their network performance and service providers to understand their customer experience, gain competitive insights and identify how to improve their networks.</p>
+<h3><a id="top-providers">Top providers</a></h3>
+<p>An operator or ISP must account for 3% or more of total test samples in the market for the period to be designated as a top provider. We use this designation to ensure that most consumers in the area actually have access to the provider to qualify it as the fastest, most consistent or having the best coverage.</p>
+<h3><a id="modern-chipsets">Modern chipsets</a></h3>
+<p>Ookla closely monitors the launch and widespread release of new device models built on chipsets capable of utilizing the latest network technologies. When calculating Speed Score<sup>™</sup> and determining the winners of Speedtest Awards, we use results from devices built on modern chipsets so that an operator’s score is not negatively impacted if a portion of its subscriber base continues to use older technology.</p>
+<h3><a id="speed-score">Speed Score</a></h3>
+<p>We created Speed Score to fully account for the range of speeds a provider offers in a single metric. This makes it easier to compare mobile operators and ISPs on several measures of speed using one metric.</p>
+<p>Speed Score incorporates a measure of each provider’s download and upload speed to rank network speed performance (90% of the final Speed Score is attributed to download speed and the remaining 10% to upload speed because online experiences are typically more affected by download speed). Speed Score uses a modified trimean to combine speeds from the 10th percentile, 50th percentile (also known as the median) and 90th percentile in a weighted average using a 1:8:1 ratio, respectively. We place the most emphasis on the median speeds as those represent what most network providers’ customers will experience on a day-to-day basis.</p>
+<h4><a id="competitive-geographies">Competitive Geography (U.S. only)</a></h4>
+<p>Not all providers serve the same geographic area. Some focus their efforts more in urban areas, where economies of scale make fast speeds easier and cheaper to provide. Others also serve vast rural areas, where it’s more difficult and expensive to provide fast speeds. Ookla’s Competitive Geography filter ensures a balanced comparison of U.S. mobile operators by eliminating geographic outliers.</p>
+<p>To meet the definition of “competitive,” a ZIP code must contain samples from at least three top national competitors (those who have at least 3% of market share at a national level), but no competitor can have more than 2/3 of the samples in that ZIP code. Operators are considered present in a ZIP code if they have at least 3% of the samples in the area and show samples on multiple devices. Limiting any operator from having more than 2/3 of samples ensures actual competition in a ZIP code rather than including areas where one competitor dominates the market.</p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-6.png" alt="Methodology-6"></p>
+<h3><a id="consistency-score">Consistency Score<sup>™</sup></a></h3>
+<p>While fast speeds are paramount, a consistent experience is also a worthy measure of a network’s quality. Consistency Score is the metric we use to identify fixed broadband or mobile networks that provide a consistent quality of service. It reflects the percentage of a provider’s data samples that meet minimum thresholds for download and upload speeds, depending on the type of network. Consistency Score for fixed broadband uses thresholds of 25 Mbps minimum download speed (the recommended speed for streaming in 4K) and 3 Mbps minimum upload speed. Consistency Score for mobile uses thresholds of 5 Mbps minimum download speed (the recommended speed for streaming in HD) and 1 Mbps minimum upload speed. The higher a provider’s Consistency Score, the more likely a consumer will enjoy acceptable internet performance and quality.</p>
+<h3><a id="mean">Mean (or average)</a></h3>
+<p>We use “mean” and “average” interchangeably unless specifically stated otherwise.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h2 id="coveragemetricsformobilebroadband">Coverage metrics for mobile broadband</h2>
+<p>An operator’s geographic coverage is determined using a sample of scans received from devices on that operator’s network in each 100 m2 area. Because coverage is a spatially-focused metric, only scans with precise and legitimate location information are included as we build samples that normalize data by user, operator, location and timeframe. Coverage and availability metrics are based on data from Android devices and require that scans have been received from multiple devices in each area represented.</p>
+<h3><a id="coverage-score">Coverage Score<sup>™</sup></a></h3>
+<p>We created Coverage Score to account for both the quality and coverage of service for mobile operators. Coverage Score multiplies the proportion of locations in which an operator was seen with service (its <a href="#footprint">footprint</a>) against the average tile quality score (based on <a href="#availability">availability</a> metrics) among all locations in which that operator is present. Coverage Score has a range of 0 to 1000 to avoid any potential for confusion that the Coverage Score represents a percentage of an area or population with coverage.</p>
+<p><img src="https://www.speedtest.net/insights/blog/content/images/2020/04/Methodology-7.png" alt="Methodology-7"><br>
+Coverage Score is not comparable across different countries because it is strongly tailored to the unique geography of each market.</p>
+<h4><a id="footprint">Footprint</a></h4>
+<p>To calculate Coverage Score, we use Footprint, which is the fraction of locations within a given market, across all operators in that market, where a device has access to service. Operators with a relatively small footprint will have a lower Coverage Score than competitors with equal availability and a larger footprint. we require a footprint of at least 30% in an operator’s market before we will calculate a Coverage Score to ensure that an operator is generally available to the public.</p>
+<h3><a id="availability">Availability</a></h3>
+<p>We divide our data on availability into three separate views: General Availability, 4G Availability, and On-Network Availability. These metrics indicate how likely a user, on average, is to have service available in the places they go. They are individually defined as:</p>
+<ul>
+<li><strong>General Availability</strong><br>
+The percentage of an operator’s known locations where a device has access to any kind of service (including roaming).</li>
+<li><strong>4G Availability</strong><br>
+The percentage of an operator’s known locations where a device has access to 4G LTE service (including roaming).</li>
+<li><strong>On-Network Availability</strong><br>
+The percentage of an operator’s known locations where a device has access to service from that operator.</li>
+</ul>
+<h3><a id="time-spent">Time Spent</a></h3>
+<p>We use Time Spent to give mobile operators insight into the percent of time that an average user spends on a given cellular technology — both on and off of their subscriber (SIM) network. Time Spent uses coverage scans to construct daily timelines for each device. Then, daily per-device durations on subscriber network, active network and cellular technology are calculated for a given area of interest. Next, the percent time spent on cellular technology per-device, based on the area and time period of interest, are determined. Finally, we aggregate the average percent time over devices for a subscriber network to give the final metrics seen in <a href="https://www.ookla.com/speedtest-intelligence">Speedtest Intelligence</a>™.</p>
+<p>We hope this reference guide will give you deeper insight into the metrics we present on Insights. You can also <a href="https://resources.ookla.com/hubfs/Ookla%20Speedtest%20Methodology%202020.pdf">download an extended version here</a>. We also have <a href="https://www.speedtest.net/insights/blog/what-is-5g-guide/">further information on 5G</a> and a <a href="https://www.speedtest.net/about/knowledge/glossary">glossary</a> that contains some general terms used when discussing internet performance across the industry. For specific information about what our data has to say about your market, <a href="https://www.ookla.com/speedtest-intelligence">learn more about Speedtest Intelligence</a>.</p>
+<!--kg-card-end: markdown-->
+                    <p class="content-disclaimer">Ookla retains ownership of this article including all of the intellectual property rights, data, content graphs and analysis. This article may not be quoted, reproduced, distributed or published for any commercial purpose without prior consent. Members of the press and others using the findings in this article for non-commercial purposes are welcome to publicly share and link to report information with attribution to Ookla.</p>
+                </article>
+
+                <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-8">
+                            <div class="widget widget-inline">
+                                <h2 class="widget-title">Tags</h2>
+                                <div class="tag-cloud">
+                                        <a href="/insights/blog/tag/ookla-news/">Ookla News</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <div class="widget widget-inline">
+                            <h2 class="widget-title">Share</h2>
+                            <div class="tag-cloud">
+                                <a href="http://wwww.facebook.com/sharer.php?u=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="http://twitter.com/share?text=How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)&url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/&title=How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)&summary=&source=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                <a href="//www.reddit.com/submit?url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="widget widget-inline post-author">
+
+        <div class="author-photo">
+          <img src="https://www.speedtest.net/insights/blog/content/images/2019/04/author-connelly.png" class="" alt="" role="presentation" />
+        </div>
+
+      <div class="author-details">
+
+        <h2 class="author-title widget-title">About The Author</h2>
+        <p>
+          Dr. Brian Connelly leads the Data Science team at Ookla. He has PhDs from Michigan State University for Computer Science and Ecology &amp; Evolutionary Biology. 
+
+        </p>
+
+        <ul class="">
+            <li><a href="https://www.twitter.com/@briandconnelly" target="_blank">@briandconnelly</a></li>
+            <li><a href="https://www.google.com/maps?q=Seattle" target="_blank"><i class="fa fa-map-marker"></i>Seattle</a></li>
+          <li><a href="/insights/blog/author/brian-connelly/"><i class="fa fa-files-o"></i>More posts</a></li>
+        </ul>
+      </div>
+</div>
+                    <div>
+
+    <div class="row posts posts-after-post">
+            <article class="post preload-background">
+                <a href="/insights/blog/significant-web-outages-q1-2020/" class="post-image">
+                    <span class="preload-background-image" style="background-image: url('https://www.speedtest.net/insights/blog/content/images/2020/04/Q12020-significant-outages-thumb.png'); opacity: 1;"></span>
+                    <span class="post-category-wrap">
+                        <span class="post-category">
+                                    Downdetector
+                        </span>
+                    </span>
+                    <header class="post-header">
+                        <h2 class="post-title">Can’t Connect? The Most Significant Online Service Outages in Q1 2020</h2>
+                        <p class="post-meta"><span class="post-meta-author"><i class="fa fa-user"></i>María F. Valenzuela Gómez</span> <time class="post-meta-date" datetime="2020-04-14">14 Apr 2020</time></p>
+                    </header>
+                </a>
+            </article>
+            <article class="post preload-background" data-image="https://www.speedtest.net/insights/blog/content/images/2020/05/antenna-thumb.png" data-resize="true">
+                <a href="/insights/blog/us-mobile-operators-new-spectrum-covid/" class="post-image">
+                    <span class="preload-background-image"></span>
+                    <span class="post-category-wrap">
+                        <span class="post-category">
+                                    global-index-US
+                        </span>
+                    </span>
+                        <span class="preload-background-spinner spinner">
+                        <span class="double-bounce1"></span>
+                        <span class="double-bounce2"></span>
+                    </span>
+                    <header class="post-header">
+                        <h2 class="post-title">How U.S. Mobile Operators are Putting Fresh Spectrum to Use for the Masses</h2>
+                        <p class="post-meta"><span class="post-meta-author"><i class="fa fa-user"></i>Milan Milanović</span> <time class="post-meta-date" datetime="2020-05-12">12 May 2020</time></p>
+                    </header>
+                </a>
+            </article>
+    </div>
+</div>
+            </section>
+            
+        </div>
+
+
+</main>
+
+    <div class="social-bar">
+        <div class="container">
+            <div class="tag-cloud">
+                <a href="https://wwww.facebook.com/sharer.php?u=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/share?text=How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)&url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/&title=How Ookla Ensures Accurate, Reliable Data: A Guide to Our Metrics and Methodology (Updated for 2020)&summary=&source=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="//www.reddit.com/submit?url=https://www.speedtest.net/insights/blog/how-ookla-ensures-accurate-reliable-data-2020/" target="_blank"><i class="fa fa-reddit"></i></a>
+            </div>
+            <div class="next-post">
+                    <span>Next Post</span>
+                    <a href="/insights/blog/significant-web-outages-q1-2020/">Can’t Connect? The Most Significant Online Service Outages in Q1 2020</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+    (function() {
+        var features = document.querySelectorAll('.preload-feature')
+        var feature_area = document.querySelector('.preload-feature-background')
+
+        if (features.length > 0 && features[0].hasAttribute('data-image')) {
+            (function (feature) {
+                let loader = new Image()
+                loader.src = feature.getAttribute('data-image')
+
+                loader.onload = function () {
+                    feature_area.querySelector('.spinner').style.display = 'none'
+                    let image = feature_area.querySelector('.preload-background-image')
+                    image.style.backgroundImage = 'url(' + loader.src + ')'
+                    image.style.opacity = 1
+                }
+            })(features[0])
+        } else {
+            feature_area.style.display = 'none'
+        }
+    })();
+</script>
+
+<footer id="footer" class="footer footer-page hide-on-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="title"><a href="/">Speedtest®</a></div>
+                <ul>
+                    <li><a href="/about/advertising">Advertise</a></li>
+                    <li><a href="/ookla-5g-map">Ookla 5G Map™</a></li>
+                    <li><a href="/insights">Ookla Insights™</a></li>
+                    <li><a href="/awards">Speedtest Awards™</a></li>
+                    <li><a href="/global-index">Speedtest Global Index™</a></li>
+                    <li><a href="/speedtest-servers">Speedtest Servers™</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://twitter.com/speedtest" target="_blank">
+                        <svg class="svg-icon svg-icon-larger"><use xlink:href="#ic_twitter"></use></svg>
+                        Twitter
+                    </a></li>
+                    <li><a href="https://www.facebook.com/speedtest" target="_blank">
+                        <svg class="svg-icon svg-icon-larger"><use xlink:href="#ic_facebook"></use></svg>
+                        Facebook
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="title"><a href="/apps">Apps</a></div>
+                <ul>
+                    <li><a href="/apps/android">Android</a></li>
+                    <li><a href="/apps/appletv">Apple TV</a></li>
+                    <li><a href="/apps/cli">CLI</a></li>
+                    <li><a href="/apps/chrome">Google Chrome</a></li>
+                    <li><a href="/apps/ios">iOS</a></li>
+                    <li><a href="/apps/mac">macOS</a></li>
+                    <li><a href="/apps/windows">Windows</a></li>
+                    <li><a href="/apps/vpn">Speedtest VPN™</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="title">Account</div>
+                <ul>
+                    <li><a href="/results">Results History</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="/help">Help</a></li>
+                </ul>
+                <div class="title"><a href="/enterprise">Enterprise</a></div>
+                <ul>
+                    <li><a href="https://www.ookla.com/enterprise">Ookla® Solutions</a></li>
+                    <li><a href="https://www.ookla.com/partnerships">Partnerships &amp; Programs</a></li>
+                </ul>
+                <div class="title"><a href="https://www.ookla.com/companies">Ookla® Brands</a></div>
+                <ul>
+                    <li><a href="https://downdetector.com/">Downdetector®</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="title">
+                    <a href="https://www.ookla.com/" aria-label="Ookla">
+                        <svg class="svg-icon svg-icon-ookla-logo svg-icon-md">
+                            <use xlink:href="#logo_ookla"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/about/careers">Careers</a></li>
+                    <li><a href="/about/press">Press</a></li>
+                </ul>
+                <div class="title"><a href="https://www.ziffdavis.com/">Ziff Davis</a></div>
+                <ul>
+                    <li><a href="https://www.ign.com/" target="_blank">IGN</a></li>
+                    <li><a href="https://www.pcmag.com/" target="_blank">PCMag</a></li>
+                    <li><a href="https://www.extremetech.com/" target="_blank">ExtremeTech</a></li>
+                    <li><a href="https://www.geek.com/" target="_blank">Geek</a></li>
+                    <li><a href="https://www.toolbox.com/" target="_blank">Toolbox</a></li>
+                    <li><a href="https://www.askmen.com/" target="_blank">AskMen</a></li>
+                    <li><a href="https://www.offers.com/" target="_blank">Offers.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <p class="copyright">Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered trademarks of Ookla, LLC and<br>may only be used with explicit written permission. © 2006-2020 Ookla, LLC. All Rights Reserved</p>
+                <ul class="list-inline">
+                    <li><a href="https://www.speedtest.net/about/accessibility">Accessibility</a></li>
+                    <li><a href="https://status.ookla.com/">Network Status</a></li>
+                    <li><a href="https://www.speedtest.net/about/privacy">Privacy Policy</a></li>
+                    <li><a href="https://www.speedtest.net/about/terms">Terms of Use</a></li>
+                    <li><a href="https://www.speedtest.net/about/ccpa">Do Not Sell My Personal Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/insights/blog/assets/ghostHunter/dist/jquery.ghosthunter.js?v=8d0c1f850d"></script>
+
+    <script>
+      $("#search-field").ghostHunter({
+        results: "#results",
+        onKeyUp: false,
+        includebodysearch: true,
+        result_template: "<a id='gh-\{\{ref}}' class='gh-search-item search-result' href='\{\{link}}'><span class='search-title'>\{\{title}}</span><span class='search-date'>\{\{pubDate}}</span></a>",
+        info_template: "<p class='search-info'>Number of posts found: \{\{amount}}</p>",
+        before: function () {
+          $('.search-results').show();
+        },
+      });
+      $('.search-results-close').on('click', function (e) {
+        e.preventDefault();
+        $('.search-results').hide();
+      });
+    </script>
+
+    <script type="text/javascript">
+      function handleFormReady() {
+        addAriaLabels();
+      }
+      // if a form element with a placeholder doesn't have a label or an
+      // aria-label, add an aria-label based on the placeholder
+      function addAriaLabels () {
+        // ignore hidden inputs and buttons
+        var selector = '.hbspt-form :input:not([type=hidden], [type=submit], [type=button])';
+        $(selector).each(function () {
+          var $el = $(this);
+          var id = $el.attr('id');
+          var $label = $('label[for=' + id + ']');
+          var labelContent = $label.length ? $label.text() : null;
+          var hasLabel = !!$label.length && !!labelContent;
+          var ariaLabel = $el.attr('aria-label');
+          var placeholder = $el.attr('placeholder');
+          if (!ariaLabel && !hasLabel && !!placeholder) {
+            $el.attr('aria-label', placeholder);
+          }
+        });
+      }
+    </script>
+
+    <script>window.baseUrl = 'https://www.speedtest.net/insights/blog/';</script>
+    <script src="/insights/blog/assets/js/bundle.min.js?v=8d0c1f850d"></script>
+
+</body>
+</html>
